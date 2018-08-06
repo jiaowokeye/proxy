@@ -1,0 +1,864 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name=”renderer” content=”webkit” />
+    <meta name="keywords" content="移动协同办公，移动考勤，移动审批，移动CRM，定位轨迹，客户管理，销售管理，HCM，SaaS" />
+    <meta name="description" content="爱到位-位智天下股份有限公司，中国自主SaaS行业领先者，秉承让管理更到位的产品理念，全面管理企业日常工作，涵盖云通讯、云管理和云营销，致力于让客户便捷、高效、更好性价比地运营管理和服务。" />
+    <meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Expires" content="0">
+    <script src="./../js/lib/jquery-1.9.1.js"></script>
+    <title>活动</title>
+    <link rel="stylesheet" href="./../css/activity.css">
+    <link rel="shortcut icon" type="image/x-icon" href="http://www.idaowei.com/idaowei.ico" media="screen" />
+    <script type="text/javascript" src="./../js/Constant.js"></script>
+    <script type="text/javascript" src="./../js/CommonResource.js"></script>
+    <script type="text/javascript" src="./../js/login.js"></script>
+
+</head>
+<body>
+<!--头部开始-->
+<div id="header-wrap">
+    <div id="Header" >
+        <a href="./../index.html"><img src="./../images/logo.png" alt="" class="logo"></a>
+        <span class="securities-wrap">【<span class="securities">证券代码</span>：872156】</span>
+        <div class="login-box floatR" id="formdiv">
+            <form id="loginForm" onkeydown="if(event.keyCode==13){Login.logon(true);}">
+                <div class="form-gruop floatL">
+                    <span>用户名：</span><input type="text" id="username" name="username" placeholder="请输入用户名">
+                </div>
+                <div class="form-gruop floatL">
+                    <span>密码：</span><input type="password" id="password" name="password" placeholder="请输入密码">
+                </div>
+                <div class="form-gruop floatL">
+                    <a id="loginBtn" href="javascript:Login.logon(true)"> 登录 <span >Login</span></a>
+                </div>
+            </form>
+        </div>
+        <div class="login-box floatR" style="display: none;" id="logindiv">
+            <div class="form-gruop floatL">
+                您好，您已登录位智天下后台管理系统
+            </div>
+            <div class="form-gruop floatL">
+                <a href="javascript:Login.logout();">注销</a>
+                <a href="javascript:Login.login(true);">进入</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--头部结束-->
+<!--导航开始-->
+<div id="nav-wrap">
+    <div id="nav">
+        <div class="tel floatL">
+            <div class="floatL">
+                <img src="./../images/phone.png" alt="">
+            </div>
+            <div class="floatR">
+                <p>400-055-5089</p>
+                <p>010-56629933</p>
+            </div>
+        </div>
+        <ul class="nav floatL" id="firstNav">
+            <li>
+                <a href="./../html/product.html">产品</a>
+                <div class="childNav childNav-first">
+                    <div class="productAbout">
+                        <div class="productUpgrade">
+                            <div class="content">
+                                <p class="title">产品升级</p>
+                                <ul>
+                                <li class="new">
+                                    <a href="./productAction.html?active=1">
+                                        <span class="data">2018-04-13</span>
+                                        <span class="edition">
+                                            <img src="./../images/productUpgradeNow.png" alt="">
+                                        </span>i到位V9.0</a>
+                                </li>
+                                <li>
+                                    <a href="./productAction.html?active=1">
+                                        <span class="data">2018-03-09</span>
+                                        <span class="edition">
+                                            <img src="./../images/productUpgrade.png" alt="">i到位V8.9</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./productAction.html?active=1">
+                                        <span class="data">2017-12-27</span>
+                                        <span class="edition">
+                                            <img src="./../images/productUpgrade.png" alt="">i到位V8.8</span>
+                                    </a>
+                                </li>
+                                </ul>
+                                <a href="./../html/productAction.html?active=1" class="floatR moreUpgrade">更多升级></a>
+                            </div>
+                        </div>
+                        <div class="productDownLoad">
+                            <p class="title floatL">产品下载</p>
+                            <img class="floatR" src="./../images/toperwm.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="product">
+                        <a href="./../html/product.html#communication">
+                            <div class="groupItem">
+                                <p class="title">云通讯</p>
+                                <p class="content">为企业提供全面的互联网通讯服<br />务,轻松实现企业通讯能力</p>
+                                <p class="introductionTitle">服务优势</p>
+                                <p class="content">快、高、广、便利、安全、无忧</p>
+                                <p class="introductionTitle">应用场景</p>
+                                <p class="content">验证码、通知提醒、热线菜单可视化、<br />热线名片</p>
+                                <p class="introductionTitle">功能介绍</p>
+                                <p class="content">i信、企业短信、视频会议、一卡多号、企业名片、通话签名<p>
+                            </div>
+                        </a>
+                        <a href="./../html/product.html#administration ">
+                            <div class="groupItem">
+                                <p class="title">云管理</p>
+                                <p class="content">以云端大数据为依托,一体化解决企业<br/>整体管理效率问题。</p>
+                                <p class="introductionTitle">服务价值</p>
+                                <p class="content">互联网+、量身定制、解决滞后、真实<br/>透明、掌控全局、链接客户、时间掌控</p>
+                                <p class="introductionTitle">应用场景</p>
+                                <p class="content">跨区域销售管理、销售与专家协同管理<p>
+                            </div>
+                        </a>
+                        <a href="./../html/product.html#marketing">
+                            <div class="groupItem">
+                                <p class="title">云营销</p>
+                                <p class="content">为企业提供智能数字化营销服务平台,<br />全面提升企业品牌覆盖和营销效果</p>
+                                <p class="introductionTitle">服务优势</p>
+                                <p class="content">智能情报分析、营销诊断精准、<br/>用户覆盖广、投放精准、数据监测</p>
+                                <p class="introductionTitle">服务能力</p>
+                                <p class="content">建立企业信息布局、DECOS-Ad平台精准投放</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li ><a href="./../html/customer.html">客户</a></li>
+            <li class="active">
+                <a href="./../html/activity.html">观点</a>
+                <div class="childNav childNav-second">
+                    <ul>
+                        <li><a href="./../html/activity.html?active=0">位智观点</a></li>
+                        <li><a href="./../html/activity.html?active=1">新闻动态</a></li>
+                        <li><a href="./../html/activity.html?active=2">公司文化</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="./../html/about.html">关于我们</a>
+                <div class="childNav childNav-third">
+                    <ul>
+                        <li><a href="./../html/about.html#companyAbout">公司概述</a></li>
+                        <li><a href="./../html/about.html#qualifications">荣誉资质</a></li>
+                        <li><a href="./../html/about.html#cultural">文化氛围</a></li>
+                        <li><a href="./../html/about.html#joinUs">加入我们</a></li>
+                        <li><a href="./../html/about.html#contact">联系方式</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="./../html/about-contact.html">联系我们</a></li>
+        </ul>
+        <div class="nav-right floatR">
+            <ul>
+                <li><a href="./../html/about-contact.html"><span>订购咨询</span></a></li>
+                <li><a href="./../html/reg.html"><span>免费试用</span></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--导航结束-->
+<!--banner部分-->
+<div id="banner-wrap">
+    <div id="banner">
+        <div class="left">
+            <div class="item">
+            <img src="./../images/news/14.jpg" alt="">
+            <p class="classification">位智观点</p>
+            <p class="title"><a target="_blank" href="https://mp.weixin.qq.com/s?__biz=MzI3NzQyOTc0Nw==&mid=2247483879&idx=2&sn=8f206673abcdd734f21b942a94ace362&chksm=eb672d7bdc10a46dfeb1dd511a81099571a7b72356e91c4014555e89d5c2ada775f92ff46480#rd">“i 到位”cioss推动移动互联网时代下的企业运营模式变革</a></p>
+            <div class="line"></div>
+            <p class="article">
+            互联网+”下的企业创新与升级，就是企业应用以移动互联网、云计算、大数据、物联网为代表的互联网新技术、新思维、新模式进行的商业创新和管理变革...
+            <a target="_blank" href="https://mp.weixin.qq.com/s?__biz=MzI3NzQyOTc0Nw==&mid=2247483879&idx=2&sn=8f206673abcdd734f21b942a94ace362&chksm=eb672d7bdc10a46dfeb1dd511a81099571a7b72356e91c4014555e89d5c2ada775f92ff46480#rd">详细></a>
+            </p>
+            </div>
+        </div>
+        <div class="right">
+            
+            <div class="item">
+                <div class="imgBox">
+                    <img src="./../images/news/34.jpg" alt="">
+                </div>
+                <div class="ari">
+                    <p class="title"><a target="_blank" href="http://news.ifeng.com/a/20180424/57833653_0.shtml">i到位王汉超：SaaS的赛道上我们会死磕到底</a></p>
+                    <div class="line"></div>
+                    <p class="article">
+                         从2018年第一季度公司运营的情况来看，我们逐渐清晰目标：SaaS的赛道上我们会死磕到底!说这句话的人，是从2013年就开始投身SaaS产品开发的i到位创始人王汉超。此人身材瘦小，但神情平和、坚毅。
+                    </p>
+                    <a target="_blank" href="http://news.ifeng.com/a/20180424/57833653_0.shtml">详细></a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="imgBox">
+                    <img src="./../images/news/22.jpg" alt="">
+                </div>
+                <div class="ari">
+                    <p class="title"><a target="_blank" href="https://mp.weixin.qq.com/s?__biz=MzI3NzQyOTc0Nw==&mid=2247483924&idx=1&sn=ad61cca913fe2d4934bd40ef07246990&chksm=eb672e88dc10a79ee9235bb3e17e34bca02a9049515d9a06623b91d75b1917f8a84c11c1a3ce#rd">企业完成数字化转型多重要？</a></p>
+                    <div class="line"></div>
+                    <p class="article">
+                        数字化说简单点就是将信息用数字表示出来，但是当数字化运用在企业转型中，就不简简单单的是转换几个信息的问题了，他需要整个平台从传统走向数字，需要整个产业模式从传统走向数字，需要整个行业认知从传统走向数字，需要全面量化企业所有经营行为，需要我们重新建立一个数字化生态系统。
+                    </p>
+                    <a target="_blank" href="https://mp.weixin.qq.com/s?__biz=MzI3NzQyOTc0Nw==&mid=2247483924&idx=1&sn=ad61cca913fe2d4934bd40ef07246990&chksm=eb672e88dc10a79ee9235bb3e17e34bca02a9049515d9a06623b91d75b1917f8a84c11c1a3ce#rd">详细></a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="imgBox">
+                    <img src="./../images/news/23.jpg" alt="">
+                </div>
+                <div class="ari">
+                    <p class="title"><a target="_blank" href="https://mp.weixin.qq.com/s?__biz=MzI3NzQyOTc0Nw==&mid=2247483924&idx=2&sn=801279fe223ab4c0e738ef9d3ffc590e&chksm=eb672e88dc10a79edea0042b7ad14c6e67293bd1625d21b927f22938030f161c7a4a1c4c1a00#rd">i到位为企业提供完整的数字化转型解决方案</a></p>
+                    <div class="line"></div>
+                    <p class="article">
+                        互联网+的本质是实现企业数字化运营，而在企业数字化转型中，i到位作为互联网业务服务能力打造者，将全面开放结合物联网、云和大数据、VI深度学习等在内的新技术应用，产品和方案涵盖企业数字化通讯、数字化营销、数字化管理为代表的服务能力，全产业链条赋能企业，助力企业对产品、生产、销售、服务等环节进行流程再造。i到位把整个平台从传统走向数字，把整个产业模式从传统走向数字，把整个行业认知从传统走向数字。帮助中国企业重新建立一个数字化生态系统。
+                    </p>
+                    <a target="_blank" href="https://mp.weixin.qq.com/s?__biz=MzI3NzQyOTc0Nw==&mid=2247483924&idx=2&sn=801279fe223ab4c0e738ef9d3ffc590e&chksm=eb672e88dc10a79edea0042b7ad14c6e67293bd1625d21b927f22938030f161c7a4a1c4c1a00#rd">详细></a>
+                </div>
+            </div>    
+        </div>
+    </div>
+</div>
+
+<div class="left-space" id="floorLeft">
+    <div>
+        <a class="toTop" href="javascript:toTop();">
+            <img src="./../images/toTop.png" alt=""><br/>
+            <span>返回顶部</span>
+        </a>
+    </div>
+    <ul class="nav">
+        <li class="active"><a >位智观点</a></li>
+        <li><a >新闻动态</a></li>
+        <li><a >公司文化</a></li>
+    </ul>
+    <p>
+        联系我们<br />
+        <span>400-055-5089</span>
+    </p>
+</div>
+<!--content开始-->
+<div id="content-wrap">
+    <div id="content">
+        <div class="left-space">
+
+        </div>
+        <div class="right-space">
+            <div class="content" id="activityDiv">
+                <div id="forum">
+                    <div class="page page1">
+                        <div class="item">
+                            <div class="left">
+                                <p class="title">
+                                    <a target="_blank" href="http://news.ifeng.com/a/20180424/57833653_0.shtml"> i到位王汉超：SaaS的赛道上我们会死磕到底</a>
+                                </p>
+                                <div class="line"></div>
+                                <p class="article">
+                                     从2018年第一季度公司运营的情况来看，我们逐渐清晰目标：SaaS的赛道上我们会死磕到底!说这句话的人，是从2013年就开始投身SaaS产品开发的i到位创始人王汉超。此人身材瘦小，但神情平和、坚毅。
+                                    <a target="_blank" href="http://news.ifeng.com/a/20180424/57833653_0.shtml">详细></a>
+                                </p>
+                            </div>
+                            <div class="right">
+                                <img src="./../images/news/34.jpg" alt="">
+                            </div>
+                        </div>
+                    	<div class="item">
+                            <div class="left">
+                                <p class="title"><a target="_blank" href="https://mp.weixin.qq.com/s/KYPecAQQfEU2XpwRydPSnQ">云端之上，让您体验更佳农牧企业服务新生态</a> </p>
+                                <div class="line"></div>
+                                <p class="article">
+                                    2017年11月20日，由布谷联盟主办，辅音国际、天地经纬共同承办的“合纵连横，有源相聚”中国农牧营销年会在全场600余人的热切期待中盛大开幕。
+                                    <a target="_blank" href="https://mp.weixin.qq.com/s/KYPecAQQfEU2XpwRydPSnQ">详细></a></p>
+                            </div>
+                            <div class="right">
+                                <img src="./../images/news/31.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="left">
+                                <p class="title"><a target="_blank" href="https://mp.weixin.qq.com/s/CKnDXpj1lVJMUHR54cj0yg">中国互联网进入“上地”时代</a> </p>
+                                <div class="line"></div>
+                                <p class="article">
+                                    “上地”这个地方有点神奇，不知道是种巧合，还是必然，海淀上地这个区域的发展几乎跟互联网的发展是同步的，还有更奇怪的是，位于上地的产业主要就是互联网／IT公司和农牧行业的公司，有个朋友把上地解读为“上天入地”，看起来很贴切，之前互联网的上半场可以用“上天”来形容，在我看来下半场一定是“入地”的过程，“上天入地”也是未来商业的必然。
+                                    <a target="_blank" href="https://mp.weixin.qq.com/s/CKnDXpj1lVJMUHR54cj0yg">详细></a></p>
+                            </div>
+                            <div class="right">
+                                <img src="./../images/news/30.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="left">
+                                <p class="title"><a target="_blank" href="./news/news2017-05-16.html">i到位关于"数字化运营"全国成员培训会议</a> </p>
+                                <div class="line"></div>
+                                <p class="article">
+                                    2017年5月12日，i到位关于企业数字化运营培训会议在北京总部召开，会议围绕《核心业务整体介绍和大客户营销的核心要素》《大客户营销技巧及实战演练》《云营销成功要素梳理》《过程及结果管理》《云通讯及云营销的解决方案梳理》5个主题进行，同时创新的提出i到位的总体定位和2018新的战略目标。
+                                    <a target="_blank" href="./news/news2017-05-16.html">详细></a></p>
+                            </div>
+                            <div class="right">
+                                <img src="./../images/news/27.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="left">
+                                <p class="title"><a target="_blank" href="https://mp.weixin.qq.com/s?__biz=MzI3NzQyOTc0Nw==&mid=2247483924&idx=4&sn=9bcb6729404c223a4db810df46f82b34&chksm=eb672e88dc10a79ecdade2b3acda1c9de0021f0a9923cd8aaca3f79c523ae8b1f448476372d7#rd">威尔史密斯诠释电影《焦点》中的品牌潜意识种植 | 7分30秒</a> </p>
+                                <div class="line"></div>
+                                <p class="article">
+                                    “品牌是一种错综复杂的象征，它是品牌属性、名称、包装、价格、历史、声誉、广告方式的无形总和。品牌同时也因消费者对其使用的印象，以及自身的经验而有所界定。”
+                                    <a target="_blank" href="https://mp.weixin.qq.com/s?__biz=MzI3NzQyOTc0Nw==&mid=2247483924&idx=4&sn=9bcb6729404c223a4db810df46f82b34&chksm=eb672e88dc10a79ecdade2b3acda1c9de0021f0a9923cd8aaca3f79c523ae8b1f448476372d7#rd">详细></a></p>
+                            </div>
+                            <div class="right">
+                                <img src="./../images/news/25.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="left">
+                                <p class="title"><a target="_blank" href="https://mp.weixin.qq.com/s?__biz=MzI3NzQyOTc0Nw==&mid=2247483903&idx=2&sn=b821c3ec2665c2581364ebdd98e88cb6&chksm=eb672d63dc10a4754a036d1849638c0fb02f9269134ebcc6674745f224865ae966f1d5db140c#rd">企业要步步为营，才能做好运营</a> </p>
+                                <div class="line"></div>
+                                <p class="article">
+                                    听过一句话“好运营，三分凭天赋，七分靠玩命”<br />企业首先要确定企业的价值定位，然后在现有的技术条件下，如何来实现这种价值，应该采取什么样的手段。
+                                    <a target="_blank" href="https://mp.weixin.qq.com/s?__biz=MzI3NzQyOTc0Nw==&mid=2247483903&idx=2&sn=b821c3ec2665c2581364ebdd98e88cb6&chksm=eb672d63dc10a4754a036d1849638c0fb02f9269134ebcc6674745f224865ae966f1d5db140c#rd">详细></a></p>
+                            </div>
+                            <div class="right">
+                                <img src="./../images/news/19.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="left">
+                                <p class="title"><a target="_blank" href="https://mp.weixin.qq.com/s?__biz=MzI3NzQyOTc0Nw==&mid=2247483903&idx=1&sn=e487f8e73d585698f8e533774e00b132&chksm=eb672d63dc10a4752b56b23305c7481dbdbd4bf1984c5d695a09af9d2a0c09ef7237f0dc4d61#rd">20倍的差距如何追赶？i到位教你Zara高效运营精髓</a> </p>
+                                <div class="line"></div>
+                                <p class="article">2016年，全球经济陷入低迷，很多奢侈品门店纷纷缩减，但Zara这一“快时尚”品牌却仍旧在躺着数钱。Zara带给我们的启示：离消费者越近的企业越容易获得成功，C2F模式是面向未来的企业的最终归宿。<a target="_blank" href="https://mp.weixin.qq.com/s?__biz=MzI3NzQyOTc0Nw==&mid=2247483903&idx=1&sn=e487f8e73d585698f8e533774e00b132&chksm=eb672d63dc10a4752b56b23305c7481dbdbd4bf1984c5d695a09af9d2a0c09ef7237f0dc4d61#rd">详细></a></p>
+                            </div>
+                            <div class="right">
+                                <img src="./../images/news/18.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="left">
+                                <p class="title"><a target="_blank" href="https://mp.weixin.qq.com/s?__biz=MzI3NzQyOTc0Nw==&mid=2247483903&idx=3&sn=2de1ac926594e415dc78324d5aaa9140&chksm=eb672d63dc10a475d588e6cf45f9b3a3cb48787845093898adf5687edc775c0d77b8889f7abe#rd">为什么企业通讯设施开始升级？</a> </p>
+                                <div class="line"></div>
+                                <p class="article">据不完全统计，短信业务并且每年以15%—50%左右的速度增长，看似无路可走的短信其实正在转型升级，虽然短信在原生性的创新难以发掘，但新兴的行业场景对短信的刚需程度并没有减少，反而增加。<a target="_blank" href="https://mp.weixin.qq.com/s?__biz=MzI3NzQyOTc0Nw==&mid=2247483903&idx=3&sn=2de1ac926594e415dc78324d5aaa9140&chksm=eb672d63dc10a475d588e6cf45f9b3a3cb48787845093898adf5687edc775c0d77b8889f7abe#rd">详细></a></p>
+                            </div>
+                            <div class="right">
+                                <img src="./../images/news/17.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="left">
+                                <p class="title"><a target="_blank"  href="https://mp.weixin.qq.com/s?__biz=MzI3NzQyOTc0Nw==&mid=2247483903&idx=4&sn=f2de40242446222270e7e249bd5802bf&chksm=eb672d63dc10a475e28e011ab79afd2e16a8dd6d7432d5b2f7ab20cc72068d49cb55f10a4f2d#rd">i到位解读企业如何做短信营销</a> </p>
+                                <div class="line"></div>
+                                <p class="article">短信营销是指：通过利用三大手机运营商移动、联通、电信直接提供的短信接口,实现与客户指定号码进行短信批量发送和自定义发送到达营销效果的营销方式。其主要的功能为行业报价、会员通知、广告促销、产品宣传、企业形象展示等。<a target="_blank" href="https://mp.weixin.qq.com/s?__biz=MzI3NzQyOTc0Nw==&mid=2247483903&idx=4&sn=f2de40242446222270e7e249bd5802bf&chksm=eb672d63dc10a475e28e011ab79afd2e16a8dd6d7432d5b2f7ab20cc72068d49cb55f10a4f2d#rd">详细></a></p>
+                            </div>
+                            <div class="right">
+                                <img src="./../images/news/16.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="left">
+                                <p class="title"><a target="_blank"  href="https://mp.weixin.qq.com/s?__biz=MzI3NzQyOTc0Nw==&mid=2247483879&idx=1&sn=99ccd0193230fcc4f32a4d036004f188&chksm=eb672d7bdc10a46d9481dbf12db7d651ed1182daae7650c1bdecd3d047fda73e2230640f75dd#rd">315特别篇 | 告别百度、互动百科这种大流量的营销入口，企业如何做出选择？ </a> </p>
+                                <div class="line"></div>
+                                <p class="article">🔲  央视 315 第一枪开向了互动百科，你给钱，我就给你上...虚假词条；称其收费 4800，搜索词条内容随你编。<br />节目开播前互动百科还给 315 点了赞，第一枪就上了榜..
+                                    <a target="_blank" href="https://mp.weixin.qq.com/s?__biz=MzI3NzQyOTc0Nw==&mid=2247483879&idx=1&sn=99ccd0193230fcc4f32a4d036004f188&chksm=eb672d7bdc10a46d9481dbf12db7d651ed1182daae7650c1bdecd3d047fda73e2230640f75dd#rd">详细></a></p>
+                            </div>
+                            <div class="right">
+                                <img src="./../images/news/15.jpg" alt="">
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="page page2">
+                        <div class="item">
+                            <div class="left">
+                                <p class="title"><a target="_blank" href="https://mp.weixin.qq.com/s?__biz=MzI3NzQyOTc0Nw==&mid=2247483924&idx=1&sn=ad61cca913fe2d4934bd40ef07246990&chksm=eb672e88dc10a79ee9235bb3e17e34bca02a9049515d9a06623b91d75b1917f8a84c11c1a3ce#rd">企业完成数字化转型多重要？ </a> </p>
+                                <div class="line"></div>
+                                <p class="article">
+                                    数字化说简单点就是将信息用数字表示出来，但是当数字化运用在企业转型中，就不简简单单的是转换几个信息的问题了，他需要整个平台从传统走向数字，需要整个产业模式从传统走向数字，需要整个行业认知从传统走向数字，需要全面量化企业所有经营行为,需要我们重新建立一个数字化生态系统。
+                                    <a target="_blank" href="https://mp.weixin.qq.com/s?__biz=MzI3NzQyOTc0Nw==&mid=2247483924&idx=1&sn=ad61cca913fe2d4934bd40ef07246990&chksm=eb672e88dc10a79ee9235bb3e17e34bca02a9049515d9a06623b91d75b1917f8a84c11c1a3ce#rd">详细></a></p>
+                            </div>
+                            <div class="right">
+                                <img src="./../images/news/22.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="left">
+                                <p class="title"><a target="_blank" href="https://mp.weixin.qq.com/s?__biz=MzI3NzQyOTc0Nw==&mid=2247483924&idx=2&sn=801279fe223ab4c0e738ef9d3ffc590e&chksm=eb672e88dc10a79edea0042b7ad14c6e67293bd1625d21b927f22938030f161c7a4a1c4c1a00#rd">i到位为企业提供完整的数字化转型解决方案 </a> </p>
+                                <div class="line"></div>
+                                <p class="article">
+                                    互联网+的本质是实现企业数字化运营，而在企业数字化转型中，i到位作为互联网业务服务能力打造者，将全面开放结合物联网、云和大数据、VI深度学习等在内的新技术应用，产品和方案涵盖企业数字化通讯、数字化营销、数字化管理为代表的服务能力，全产业链条赋能企业，助力企业对产品、生产、销售、服务等环节进行流程再造。
+                                    <a target="_blank" href="https://mp.weixin.qq.com/s?__biz=MzI3NzQyOTc0Nw==&mid=2247483924&idx=2&sn=801279fe223ab4c0e738ef9d3ffc590e&chksm=eb672e88dc10a79edea0042b7ad14c6e67293bd1625d21b927f22938030f161c7a4a1c4c1a00#rd">详细></a></p>
+                            </div>
+                            <div class="right">
+                                <img src="./../images/news/23.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="left">
+                                <p class="title"><a target="_blank" href="https://mp.weixin.qq.com/s?__biz=MzI3NzQyOTc0Nw==&mid=2247483924&idx=3&sn=4ccb59b4d6973f1405be94e476b142fd&chksm=eb672e88dc10a79ecac43e557c343cb500eada5f20f701fb99fbe15e97e341aa34c7e135c6bb#rd">传统企业如何应对数字化挑战</a> </p>
+                                <div class="line"></div>
+                                <p class="article">
+                                    全球知名的管理咨询大师拉姆·查兰，在中国商界木兰年会现场，做了一场演讲，在这场演讲中他指出，在这个时代，传统企业不做数字化转型就没有未来。
+                                    <a target="_blank" href="https://mp.weixin.qq.com/s?__biz=MzI3NzQyOTc0Nw==&mid=2247483924&idx=3&sn=4ccb59b4d6973f1405be94e476b142fd&chksm=eb672e88dc10a79ecac43e557c343cb500eada5f20f701fb99fbe15e97e341aa34c7e135c6bb#rd">详细></a></p>
+                            </div>
+                            <div class="right">
+                                <img src="./../images/news/24.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="left">
+                                <p class="title"><a target="_blank"  href="https://mp.weixin.qq.com/s?__biz=MzI3NzQyOTc0Nw==&mid=2247483879&idx=4&sn=e76ba38ce2367c656b94a4c71729f862&chksm=eb672d7bdc10a46dc5b6880770422880f0ab6c22593448c097e5a1799302217c257c51897c17#rd">企业不赚钱，超80%是没有找到正确的营销方法和工具 </a> </p>
+                                <div class="line"></div>
+                                <p class="article">进入移动互联网时代，有不少刚创业的公司迅速蹿红，在短时间内取得巨大的成功。它们之所以取得了成功，就是因为懂得如何利用互联网思维进行营销，让自己的产品被更多的人接受和认可。这仅仅是那20%的企业，另外80%企业拥有好产品却面临不赚钱的难题，是怎么回事？<a target="_blank" href="https://mp.weixin.qq.com/s?__biz=MzI3NzQyOTc0Nw==&mid=2247483879&idx=4&sn=e76ba38ce2367c656b94a4c71729f862&chksm=eb672d7bdc10a46dc5b6880770422880f0ab6c22593448c097e5a1799302217c257c51897c17#rd">详细></a></p>
+                            </div>
+                            <div class="right">
+                                <img src="./../images/news/13.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="left">
+                                <p class="title"><a target="_blank"  href="https://mp.weixin.qq.com/s?__biz=MzI3NzQyOTc0Nw==&mid=2247483858&idx=1&sn=0bc5012f8e6c897d4f17851bfaa0ec9b&chksm=eb672d4edc10a458859ac9475bc5b9f86a340f554b58c8ab4c8914cb4647c477698c0314f764#rd">“i 到位”揭秘大品牌为何干不过网红？ </a> </p>
+                                <div class="line"></div>
+                                <p class="article">靠脸吃饭的网红竟然打败了数十年经营的品牌企业，听起来很不可思议!但事实却给了“自大”的品牌商一个耳光，在去年双十一盛会上，有三家网红店冲进了亿元俱乐部，令很多品牌商都大惊失色。<a target="_blank" href="https://mp.weixin.qq.com/s?__biz=MzI3NzQyOTc0Nw==&mid=2247483858&idx=1&sn=0bc5012f8e6c897d4f17851bfaa0ec9b&chksm=eb672d4edc10a458859ac9475bc5b9f86a340f554b58c8ab4c8914cb4647c477698c0314f764#rd">详细></a></p>
+                            </div>
+                            <div class="right">
+                                <img src="./../images/news/12.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="left">
+                                <p class="title"><a target="_blank"  href="https://mp.weixin.qq.com/s?__biz=MzI3NzQyOTc0Nw==&mid=2247483858&idx=2&sn=3ef9216d77dfab76dd1efa9d56b768c4&chksm=eb672d4edc10a458022eb47d10e726770512f01e9d9dd7593de5b063f63aad59a64b8854f054#rd">三星案例分析 |“i 到位”正在颠覆企业传统运营模式（连载) </a> </p>
+                                <div class="line"></div>
+                                <p class="article">💣2016年8月24日，Note7 首炸，被戏称为“100万韩元的炸弹”
+                                    <br />?8月31日，Note7 二炸，当天三星声明：由于要对产品质量进行额外测试，Note 7的出货时间推迟。
+                                    <a target="_blank" href="https://mp.weixin.qq.com/s?__biz=MzI3NzQyOTc0Nw==&mid=2247483858&idx=2&sn=3ef9216d77dfab76dd1efa9d56b768c4&chksm=eb672d4edc10a458022eb47d10e726770512f01e9d9dd7593de5b063f63aad59a64b8854f054#rd">详细></a></p>
+                            </div>
+                            <div class="right">
+                                <img src="./../images/news/11.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="left">
+                                <p class="title"><a target="_blank"  href="https://mp.weixin.qq.com/s?__biz=MzI3NzQyOTc0Nw==&mid=2247483858&idx=3&sn=e04ed418867f9cc8048ce00713b10c3a&chksm=eb672d4edc10a458958233d6cefb23605e28ede71fbf3caebf7d39bfc9ccdc50861b21666184#rd">i 到位打造新一代企业智能云通讯平台！ </a> </p>
+                                <div class="line"></div>
+                                <p class="article">“i 到位”云通讯帮企业实时连接客户、雇员，供应商及合作伙伴。通过 i 信，i 会议，企业动态名片使企业具备更高效、更安全、更省钱、更有洞察力的新一代智能通讯能力！<a target="_blank" href="https://mp.weixin.qq.com/s?__biz=MzI3NzQyOTc0Nw==&mid=2247483858&idx=3&sn=e04ed418867f9cc8048ce00713b10c3a&chksm=eb672d4edc10a458958233d6cefb23605e28ede71fbf3caebf7d39bfc9ccdc50861b21666184#rd">详细></a></p>
+                            </div>
+                            <div class="right">
+                                <img src="./../images/news/10.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="left">
+                                <p class="title"><a target="_blank"  href="https://mp.weixin.qq.com/s?__biz=MzI3NzQyOTc0Nw==&mid=2247483858&idx=4&sn=553da0e72d4856c5a71eb79f2f7c519a&chksm=eb672d4edc10a4584623d6f63400d1e3bcb050f7302f360fff9de21dca9b419ceeae631362b9#rd">“i 到位”云营销帮助企业品牌营销从量变走向质变 </a> </p>
+                                <div class="line"></div>
+                                <p class="article">大数据时代下，企业如何驾驭数据，利用数据驱动、支持决策，是形成差异化竞争优势的关键所在。对于企业来说，营销是关键的一步，也是数据驱动作用比较显性的一步，如何通过对数据的采集、处理、分析，洞察用户需求，精准找到目标用户群并提供相应的方案，从而实现企业盈利、用户体验双赢，是顺应时代大势。<a target="_blank" href="https://mp.weixin.qq.com/s?__biz=MzI3NzQyOTc0Nw==&mid=2247483858&idx=4&sn=553da0e72d4856c5a71eb79f2f7c519a&chksm=eb672d4edc10a4584623d6f63400d1e3bcb050f7302f360fff9de21dca9b419ceeae631362b9#rd">详细></a></p>
+                            </div>
+                            <div class="right">
+                                <img src="./../images/news/09.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="left">
+                                <p class="title"><a target="_blank"  href="https://mp.weixin.qq.com/s?__biz=MzI3NzQyOTc0Nw==&mid=2247483753&idx=1&sn=64fc4f6cb7e3d8300c767ba2c0fa1e71&chksm=eb672df5dc10a4e3d438c194bfc0d2dbc86fa496b05e184a4acf27649c41dcda19eaca4a6b3c#rd">i 到位：让企业拥有像“美国宙斯盾”系统一样强大的核心管理系统 </a> </p>
+                                <div class="line"></div>
+                                <p class="article">浙商总会会长、阿里巴巴董事局主席马云在出席“江苏省浙江商会十周年大会”时，这样告诫企业家：“昨天还是巨大的技术革命，在今天有可能就是最弱的。新技术的更迭将远远超过大家的想象。”是的，当新技术、新消费、新市场全部叠加在一起的时候，你会发现，手脚...<a target="_blank" href="https://mp.weixin.qq.com/s?__biz=MzI3NzQyOTc0Nw==&mid=2247483753&idx=1&sn=64fc4f6cb7e3d8300c767ba2c0fa1e71&chksm=eb672df5dc10a4e3d438c194bfc0d2dbc86fa496b05e184a4acf27649c41dcda19eaca4a6b3c#rd">详细></a></p>
+                            </div>
+                            <div class="right">
+                                <img src="./../images/news/08.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="left">
+                                <p class="title"><a target="_blank"  href="https://mp.weixin.qq.com/s?__biz=MzI3NzQyOTc0Nw==&mid=2247483753&idx=2&sn=fb01227dd206835938a3b1810ce3f090&chksm=eb672df5dc10a4e3d303c9ac41cee1782f393961d1bb0be8e513f38363a41c76df81064fb527#rd">“i到位”大数据营销，为您提供大数据驱动的营销解决方案 </a> </p>
+                                <div class="line"></div>
+                                <p class="article">大数据实现的是基础数据筛选和规律呈现，而高门槛的AI要实现深度学习后的自主判断和决策，而为这方面最先带来突破的领域可能是营销。<a target="_blank" href="https://mp.weixin.qq.com/s?__biz=MzI3NzQyOTc0Nw==&mid=2247483753&idx=2&sn=fb01227dd206835938a3b1810ce3f090&chksm=eb672df5dc10a4e3d303c9ac41cee1782f393961d1bb0be8e513f38363a41c76df81064fb527#rd">详细></a></p>
+                            </div>
+                            <div class="right">
+                                <img src="./../images/news/07.jpg" alt="">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="page page3">
+                    	<div class="item">
+                            <div class="left">
+                                <p class="title"><a target="_blank"  href="https://mp.weixin.qq.com/s?__biz=MzI3NzQyOTc0Nw==&mid=2247483753&idx=3&sn=89be3a91f4fbabed8e587c3ff3c4aa39&chksm=eb672df5dc10a4e3b14a9057b150cc400b3950f3c9e5e226f6e2c83bcc83fc3f9234210b2a1f#rd">“i 到位”教你看懂“小程序”的用户思维 </a> </p>
+                                <div class="line"></div>
+                                <p class="article">
+                                    1月9号，微信小程序终于正式呈现在大众面前。一时间，它引发了各路投资人的关注，除去如何利用小程序创业之外，我们不妨看看它将给用户带去怎样极致的用户体验！在微信公开课上，张小龙举了这样两个小程序的例子：...
+                                    <a target="_blank" href="https://mp.weixin.qq.com/s?__biz=MzI3NzQyOTc0Nw==&mid=2247483753&idx=3&sn=89be3a91f4fbabed8e587c3ff3c4aa39&chksm=eb672df5dc10a4e3b14a9057b150cc400b3950f3c9e5e226f6e2c83bcc83fc3f9234210b2a1f#rd">详细></a></p>
+                            </div>
+                            <div class="right">
+                                <img src="./../images/news/06.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="left">
+                                <p class="title"><a target="_blank"  href="https://mp.weixin.qq.com/s?__biz=MzI3NzQyOTc0Nw==&mid=2247483753&idx=4&sn=a58f2e1f6aad9dcf493a945cd8a9829c&chksm=eb672df5dc10a4e3154024c744bea6edc82b7b578f97848b7e6284b3c45f20299e71cd22eab0#rd">基于大数据的人工智能 </a> </p>
+                                <div class="line"></div>
+                                <p class="article">李开复讲“人工智能离不开深度学习，通过大量数据的积累探索，在任何狭窄的领域，如围棋博弈、商业精准营销、无人驾驶等等，人类终究会被机器所超越。而AI技术要实现这一跨越式的发展，把人从更多的劳力劳动中彻底解放出来，除了计算能力和深度学习算法的演进，大数据更是其中的关键”...<a target="_blank" href="https://mp.weixin.qq.com/s?__biz=MzI3NzQyOTc0Nw==&mid=2247483753&idx=4&sn=a58f2e1f6aad9dcf493a945cd8a9829c&chksm=eb672df5dc10a4e3154024c744bea6edc82b7b578f97848b7e6284b3c45f20299e71cd22eab0#rd">详细></a></p>
+                            </div>
+                            <div class="right">
+                                <img src="./../images/news/05.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="left">
+                                <p class="title"><a target="_blank" href="https://mp.weixin.qq.com/s?__biz=MzI3NzQyOTc0Nw==&mid=2247483705&idx=1&sn=6517e980d719b6eb94433122f9d29d84&chksm=eb672da5dc10a4b3cbccc19d6f57ff530ec6306b2c71cb69cafe3584fd483db6aa2810d8e536#rd">别光提工具，“让管理思想高效落地”才是正事！</a></p>
+                                <div class="line"></div>
+                                <p class="article">“i到位”的管理理念不是解决企业某一业务板块的问题，而是解决企业整体管理效率的问题。<a target="_blank" href="https://mp.weixin.qq.com/s?__biz=MzI3NzQyOTc0Nw==&mid=2247483705&idx=1&sn=6517e980d719b6eb94433122f9d29d84&chksm=eb672da5dc10a4b3cbccc19d6f57ff530ec6306b2c71cb69cafe3584fd483db6aa2810d8e536#rd">详细></a></p>
+                            </div>
+                            <div class="right">
+                                <img src="./../images/news/04.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="left">
+                                <p class="title"><a target="_blank" href="https://mp.weixin.qq.com/s?__biz=MzI3NzQyOTc0Nw==&mid=2247483705&idx=2&sn=9126764535936bae6c1eb08557ad50db&chksm=eb672da5dc10a4b320bd76f48090f7b32e0d6ac0258c7e4c62c555e5487f2806d9fbceefe7e7#rd">让营销更有“技术范儿”</a></p>
+                                <div class="line"></div>
+                                <p class="article">在全球，每天会有0.95亿的Tweet产生，一半的消费者使用两种或更多种技术进行在线交流；在中国，5.6亿的用户主动加入新浪与腾讯微博，45%的消费者在购买或决策前会咨询朋友；只有18%的人相信来自零售商和制造商的信息。<a target="_blank" href="https://mp.weixin.qq.com/s?__biz=MzI3NzQyOTc0Nw==&mid=2247483705&idx=2&sn=9126764535936bae6c1eb08557ad50db&chksm=eb672da5dc10a4b320bd76f48090f7b32e0d6ac0258c7e4c62c555e5487f2806d9fbceefe7e7#rd">详细></a></p>
+                            </div>
+                            <div class="right">
+                                <img src="./../images/news/03.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="left">
+                                <p class="title"><a target="_blank" href="https://mp.weixin.qq.com/s?__biz=MzI3NzQyOTc0Nw==&mid=2247483705&idx=3&sn=c79aa3896c91b375ce38ceb9cbb08f91&chksm=eb672da5dc10a4b39d145ef92b4336cdd2f03045ec59e798ad885946222c9ba7cf77c53e5587#rd">调研 | 传统ERP闲置率超七成，怎能不被SaaS取代？ </a></p>
+                                <div class="line"></div>
+                                <p class="article">本文对于传统行业 ERP 系统的一级功能模块分为 8 类：全面预算管理、采购管理、资金管理、资产管理、财务管理、报表管理、人力资源管理、制造管理。并以企业用户对这 8 类功能模块的使用情况为指标计算传统行业 ERP 系统的投资浪费...<a target="_blank" href="https://mp.weixin.qq.com/s?__biz=MzI3NzQyOTc0Nw==&mid=2247483705&idx=3&sn=c79aa3896c91b375ce38ceb9cbb08f91&chksm=eb672da5dc10a4b39d145ef92b4336cdd2f03045ec59e798ad885946222c9ba7cf77c53e5587#rd">详细></a></p>
+                            </div>
+                            <div class="right">
+                                <img src="./../images/news/02.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="left">
+                                <p class="title"><a target="_blank" href="https://mp.weixin.qq.com/s?__biz=MzI3NzQyOTc0Nw==&mid=2247483705&idx=4&sn=90a6dde875a7cada729bc146301cb970&chksm=eb672da5dc10a4b36acf56aa8061e22127ac5bd5d2f6aa5542ced49abf0373eca85caf3958f8#rd">SaaS运营九大法则 </a> </p>
+                                <div class="line"></div>
+                                <p class="article">无论是做你自己的内部系统，还是给客户设计产品和解决方案，只要可行，就尽量利用云，对传统软件部署说“不！” 这样做不但会让你获得对SaaS业务的第一手体验，实时了解到最先进的云业务战略， 还能解放你的技术资源，优化你的财务报表，让你把宝贵资源和财力用在产品...<a target="_blank" href="https://mp.weixin.qq.com/s?__biz=MzI3NzQyOTc0Nw==&mid=2247483705&idx=4&sn=90a6dde875a7cada729bc146301cb970&chksm=eb672da5dc10a4b36acf56aa8061e22127ac5bd5d2f6aa5542ced49abf0373eca85caf3958f8#rd">详细></a></p>
+                            </div>
+                            <div class="right">
+                                <img src="./../images/news/20.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="left">
+                                <p class="title"><a target="_blank" href="https://mp.weixin.qq.com/s?__biz=MzI3NzQyOTc0Nw==&mid=2247483688&idx=4&sn=5b630adb6e86946d6b0708654b17a19a&chksm=eb672db4dc10a4a23be8577feb6b7e1a5e937efc4c5148c34f55e518aad24e3386736e2f1bbc#rd">Gartner：未来3年，预测有一半中国企业将实施“双模IT”</a>  </p>
+                                <div class="line"></div>
+                                <p class="article">如果把企业级IT的发展分为三个阶段，它们分别是IT工匠阶段、IT产业阶段和数字化阶段。其中第一、二个阶段所关注的分别是技术和流程。但到了数字化阶段，企业的注意力逐渐放在商业模式上面，应当具备数字化的领导能...<a target="_blank" href="https://mp.weixin.qq.com/s?__biz=MzI3NzQyOTc0Nw==&mid=2247483688&idx=4&sn=5b630adb6e86946d6b0708654b17a19a&chksm=eb672db4dc10a4a23be8577feb6b7e1a5e937efc4c5148c34f55e518aad24e3386736e2f1bbc#rd">详细></a></p>
+                            </div>
+                            <div class="right">
+                                <img src="./../images/news/01.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="left">
+                                <p class="title"><a target="_blank" href="https://mp.weixin.qq.com/s?__biz=MzI3NzQyOTc0Nw==&mid=2247483688&idx=3&sn=9131014dd2835e1a2b0ae5e5c7209f93&chksm=eb672db4dc10a4a2342de23d8365679b2e617fd80f26f668314fd67502671d2bd9a61d8412cc#rd">大数据的与企业的发展趋势 </a></p>
+                                <div class="line"></div>
+                                <p class="article"> 随着大数据普遍运用，各行各业越来越重视，从目前大数据应用市场来看，传统互联网、商业企业等均是大数据服务的需求者，传统制造业也开始注重数据的价值，因此大数据企业的服务对象和范围将会越来越广...<a target="_blank" href="https://mp.weixin.qq.com/s?__biz=MzI3NzQyOTc0Nw==&mid=2247483688&idx=3&sn=9131014dd2835e1a2b0ae5e5c7209f93&chksm=eb672db4dc10a4a2342de23d8365679b2e617fd80f26f668314fd67502671d2bd9a61d8412cc#rd">详细></a></p>
+                            </div>
+                            <div class="right">
+                                <img src="./../images/news/600.png" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="left">
+                                <p class="title"><a target="_blank" href="https://mp.weixin.qq.com/s?__biz=MzI3NzQyOTc0Nw==&mid=2247483688&idx=1&sn=533219dc7d277d8374967881c3ce0244&chksm=eb672db4dc10a4a2faa129fd5b658ba36d6e9eea639d172d9f8ac0460dca8a95c202a6743ada#rd">在全民移动互联网时代，“i 到位”如何化解一线零售终端营销的尴尬？</a> </p>
+                                <div class="line"></div>
+                                <p class="article">据国际著名调研机构IDC预测，中国企业级移动应用在2017年将达到41.5亿美元，复合增长率为45.3%。
+                                    随着外部环境的成熟以及内部需求的放大，企业移动应用市场近两年将迎来爆发式增长。...<a target="_blank" href="https://mp.weixin.qq.com/s?__biz=MzI3NzQyOTc0Nw==&mid=2247483688&idx=1&sn=533219dc7d277d8374967881c3ce0244&chksm=eb672db4dc10a4a2faa129fd5b658ba36d6e9eea639d172d9f8ac0460dca8a95c202a6743ada#rd">详细></a></p>
+                            </div>
+                            <div class="right">
+                                <img src="./../images/news/640.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page page4">
+                        <div class="item">
+                            <div class="left">
+                                <p class="title">
+                                    <a target="_blank" href="https://mp.weixin.qq.com/s?__biz=MzI3NzQyOTc0Nw==&mid=2247483879&idx=2&sn=8f206673abcdd734f21b942a94ace362&chksm=eb672d7bdc10a46dfeb1dd511a81099571a7b72356e91c4014555e89d5c2ada775f92ff46480#rd">“i 到位”cioss推动移动互联网时代下的企业运营模式变革 </a>
+                                </p>
+                                <div class="line"></div>
+                                <p class="article">互联网+”下的企业创新与升级，就是企业应用以移动互联网、云计算、大数据、物联网为代表的互联网新技术、新思维、新模式进行的商业创新和管理变革。
+                                    <a target="_blank" href="https://mp.weixin.qq.com/s?__biz=MzI3NzQyOTc0Nw==&mid=2247483879&idx=2&sn=8f206673abcdd734f21b942a94ace362&chksm=eb672d7bdc10a46dfeb1dd511a81099571a7b72356e91c4014555e89d5c2ada775f92ff46480#rd">详细></a>
+                                </p>
+                            </div>
+                            <div class="right">
+                                <img src="./../images/news/14.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="news" class="hide">
+                    <div class="page page1">
+                        <div class="item">
+                            <div class="left">
+                                <p class="title">
+                                    <a target="_blank" href="./news/wxartical1.html">别再让自己忙的跟狗一样了，管理者最大的价值就是帮助90后成功，服务好90后！</a>
+                                </p>
+                                <div class="line"></div>
+                                <p class="article">
+                                    不可否定，泛90后已经成为企业中的主力员工。当他们以无穷的生命力和创造力推动企业甚至商业发展的同时，很多的行为方式却颠覆了上一代管理者的认知和不解。
+                                    <a target="_blank" href="./news/wxartical1.html">详细</a>
+                                </p>
+                            </div>
+                            <div class="right">
+                                <img src="./../images/news/wxartical1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="left">
+                                <p class="title">
+                                    <a target="_blank" href="./news/wxartical2.html">高建华：不要再谈什么狼性管理了，激发团队的人性才能成就一家健康和快乐的企业</a>
+                                </p>
+                                <div class="line"></div>
+                                <p class="article">
+                                        一直以来，商业界都流行着“我们要打造、建设一支狼性团队”的口号和目标。
+                                    <a target="_blank" href="./news/wxartical2.html">详细</a>
+                                </p>
+                            </div>
+                            <div class="right">
+                                <img src="./../images/news/wxartical2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="left">
+                                <p class="title">
+                                    <a target="_blank" href="./news/wxartical3.html">营销老炮何慕：11个人做一个亿的生意，只卖给1.5度圈子里有数的人。怎么办到的？</a>
+                                </p>
+                                <div class="line"></div>
+                                <p class="article">
+                                    互联网没有颠覆商业本质，而是把吆喝方式彻底颠覆了！
+                                    <a target="_blank" href="./news/wxartical3.html">详细</a>
+                                </p>
+                            </div>
+                            <div class="right">
+                                <img src="./../images/news/wxartical3.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="left">
+                                <p class="title">
+                                    <a target="_blank" href="./news/wxartical4.html">张晓丽：激活组织首先要让每个员工成为业务单元的CEO</a>
+                                </p>
+                                <div class="line"></div>
+                                <p class="article">
+                                        在国内白酒市场一枝独秀的压制下，是什么力量支撑着山西汾酒产生了如此巨大能量的销售和利润突破？山西汾酒又凭什么能够在今年就实现预计2020年才能完成的百亿目标？山西汾酒，这几年究竟做了什么？
+                                    <a target="_blank" href="./news/wxartical4.html">详细</a>
+                                </p>
+                            </div>
+                            <div class="right">
+                                <img src="./../images/news/wxartical4.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="left">
+                                <p class="title">
+                                    <a target="_blank" href="./news/wxartical5.html">赵明：你了解客户的真正需求吗，需求认知是营销是否到位的根源！</a>
+                                </p>
+                                <div class="line"></div>
+                                <p class="article">
+                                        为什么你的企业自认为有品牌，但是你的产品价格就是卖不上去？
+                                    <a target="_blank" href="./news/wxartical5.html">详细</a>
+                                </p>
+                            </div>
+                            <div class="right">
+                                <img src="./../images/news/wxartical5.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="left">
+                                <p class="title">
+                                    <a target="_blank" href="./news/wxartical6.html">赵强：不要成为80%被淘汰的企业，一带一路或许多给自己一条生路！</a>
+                                </p>
+                                <div class="line"></div>
+                                <p class="article">
+                                        为什么传统行业的生意会变得越来越举步维艰？是因为传统行业的企业家不够努力？还是传统行业生意真的面临日落西山要被淘汰的命运？传统行业的生意还有没有可能起死回生、东山再起？
+                                    <a target="_blank" href="./news/wxartical6.html">详细</a>
+                                </p>
+                            </div>
+                            <div class="right">
+                                <img src="./../images/news/wxartical6.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="left">
+                                <p class="title">
+                                    <a target="_blank" href="https://mp.weixin.qq.com/s/iDec5mbOj87hkdj3V-BsMg">数字化营销——如何让你的产品成为社交货币</a>
+                                </p>
+                                <div class="line"></div>
+                                <p class="article">
+                                    以前有句古话：一铺养三代！现在是：一铺坑三代！以前，我们招招手，客户就会蜂拥而至，可是，现在喊破嗓门也见不到人影。他们都跑去线上了？
+                                    <a target="_blank" href="https://mp.weixin.qq.com/s/iDec5mbOj87hkdj3V-BsMg">详细></a>
+                                </p>
+                            </div>
+                            <div class="right">
+                                <img src="./../images/news/35.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="left">
+                                <p class="title">
+                                    <a target="_blank" href="http://mp.weixin.qq.com/s/LgwUkFvHsBqiWEGFm42LLg">年轻员工动不动就辞职，企业如何管理员工？</a>
+                                </p>
+                                <div class="line"></div>
+                                <p class="article">
+                                    年轻员工特别是90后辞职，似乎已成为职场的一种常态。据相关调查结果显示，在90后就业者中，50%的就业者第一份工作未满一年，40%的就业者未坚持六个月，仅有11%的就业者能坚持三年以上。面对员工辞职的现象，企业如何管理员工？
+                                    <a target="_blank" href="http://mp.weixin.qq.com/s/LgwUkFvHsBqiWEGFm42LLg">详细></a>
+                                </p>
+                            </div>
+                            <div class="right">
+                                <img src="./../images/news/32.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="left">
+                                <p class="title">
+                                    <a target="_blank" href="http://mp.weixin.qq.com/s/hRVPaxXvfVH6ZxUUqzPnUg">企业管理中八大常见的难点</a>
+                                </p>
+                                <div class="line"></div>
+                                <p class="article">
+                                     通过i到位，就可以快速提高我们的工作效率，以及更加透明的看到执行的过程以及执行的节点，以上两点做好之后，企业管理、工作上面很多问题就会迎刃而解。
+                                    <a target="_blank" href="http://mp.weixin.qq.com/s/hRVPaxXvfVH6ZxUUqzPnUg">详细></a>
+                                </p>
+                            </div>
+                            <div class="right">
+                                <img src="./../images/news/33.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="left">
+                                <p class="title"><a target="_blank" href="http://if.stockstar.com/CP2017110200001006.shtml">传统巨头为何被“秒蚕食”？i到位揭秘数字化运营的暴击力</a> </p>
+                                <div class="line"></div>
+                                <p class="article">
+                                        完整、精确的数据是公司极为宝贵的资产，甚至是公司崛起过程中的竞争利器。而以i到位为代表的saas平台正是从数字化获客、数字化交易、数字化管理三个方面，全面优化企业的运营，以数字化的方法，应对这个瞬息万变的数字化世界。
+                                    <a target="_blank" href="http://if.stockstar.com/CP2017110200001006.shtml">详细></a></p>
+                            </div>
+                            <div class="right">
+                                <img src="./../images/news/28.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page page2">
+                        <div class="item">
+                            <div class="left">
+                                <p class="title"><a target="_blank" href="./news/news2017-08-28.html">位智天下新三板挂牌，实力领航企业数字化升级</a> </p>
+                                <div class="line"></div>
+                                <p class="article">7月21日，全国中小企业股转系统公告显示，北京位智天下科技股份有限公司（证券简称：位智天下 证券代码：872156）的挂牌申请获得批准，并于当日挂牌。<a target="_blank" href="./news/news2017-08-28.html">详细></a></p>
+                            </div>
+                            <div class="right">
+                                <img src="./../images/news/29.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="left">
+                                <p class="title"><a target="_blank" href="./news/news2016-10-12.html">2016中国农牧营销年会“i 到位”营销合伙人戴征演讲语录</a> </p>
+                                <div class="line"></div>
+                                <p class="article">饲料企业看起来离消费者有点远，但是如果你不能直达你的消费者的内心，那么，我们将来往哪里去？那么我们又一个核心的问题是，我们看到了这个社会在变成一个一个的、分散的、共融的，这样的小的这个社群。那么我们怎么去传递我们的价值呢？<a target="_blank" href="./news/news2016-10-12.html">详细></a></p>
+                            </div>
+                            <div class="right">
+                                <img src="./../images/news/new1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="left">
+                                <p class="title"><a target="_blank" href="./news/news2016-11-24.html">第三届中国婴童行业领袖峰会 (CBIS)—“i 到位”营销合伙人戴征演讲 </a></p>
+                                <div class="line"></div>
+                                <p class="article"> 2016第三届中国婴童产业领袖峰会(CBIS)于11月24日-25日在首都北京盛大召开，各路行业大咖齐聚，研讨产业变革，共话“新消费时代”，为企业指明婴童行业未来方向。位智天下营销合伙人戴征受邀参与这场行业瞩目的饕餮盛宴。“i 到位”与500...<a target="_blank" href="./news/news2016-11-24.html">详细></a></p>
+                            </div>
+                            <div class="right">
+                                <img src="./../images/news/new2.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="culture" class="hide">
+                    <div class="page page1">
+                        <div class="item">
+                            <div class="left">
+                                <p class="title"><a target="_blank" href="./news/news2017-05-02.html">拼搏演绎豪情，团结创造辉煌</a></p>
+                                <div class="line"></div>
+                                <p class="article">2017年4月28日，北京位智天下科技股份有限公司在五一劳动节来临之际，迎着暖暖春意，组织了一场西山国家森林公园的登山拓展活动<a target="_blank" href="./news/news2017-05-02.html">详细></a></p>
+                            </div>
+                            <div class="right">
+                                <img src="./../images/news/26.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+
+                            <div class="left">
+                                <p class="title"><a target="_blank" href="./news/news2017-03-08.html">三八女神节，位智天下给公司所有女上神放福利啦!</a> </p>
+                                <div class="line"></div>
+                                <p class="article">导语：我负责送出祝福，你负责三八女神节快乐！<a target="_blank" href="./news/news2017-03-08.html">详细></a></p>
+                            </div>
+                            <div class="right">
+                                <img src="./../images/news/cul1.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            </div>
+            <div id="page-nav">
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--content结束-->
+<!--footer部分开始-->
+<div id="footer-wrap">
+    <div id="footer" >
+        <div class="footer-left  floatL">
+            <div >
+                <ul class="function">
+                    <li><a href="./productAction.html#clockinM">考勤</a></li>
+                    <li><a href="./productAction.html#shenpi">审批</a></li>
+                    <li><a href="./productAction.html#kehuguanli">客户</a></li>
+                    <li><a href="./productAction.html#kehubaifang">拜访</a></li>
+                    <li><a href="./productAction.html#sales">销售</a></li>
+                    <li><a href="./productAction.html#dingdanguanli">订单</a></li>
+                    <li><a href="./productAction.html#contacts">人脉</a></li>
+                    <li><a href="./productAction.html#dingwei">送货追踪</a></li>
+                </ul>
+                <ul class="share">
+                    <li><a target="_blank" href="http://weibo.com/idaowei?refer_flag=1001030102_"><img class="imgFirst" src="./../images/shareSina.png" alt=""><img class="imgSecond" src="./../images/shareSinaH.png" alt=""></a></li>
+                    <li class="shareWx">
+                        <a target="_blank" href="javascript:;"><img class="imgFirst" src="./../images/sharewx.png" alt=""><img class="imgSecond" src="./../images/sharewxH.png" alt=""></a>
+                        <div><img src="./../images/code.jpg" alt=""></div>
+                    </li>
+
+                </ul>
+            </div>
+            <div >
+                <p class="record">Copyright 2010-2017 idaowei.com All Rights Reserved 京ICP备11019734号-2 京公网安备11010802013421号</p>
+            </div>
+        </div>
+        <div class="footer-right floatR">
+            <img src="./../images/footer-wx.png" alt="">
+        </div>
+    </div>
+</div>
+
+<!--footer部分结束-->
+<div id="aside">
+    <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2929809574&site=qq&menu=yes">
+        <img src="./../images/customerServide.png" alt="">在线咨询
+    </a>
+</div>
+<script src="./../js/activity.js"></script>
+</body>
+</html>

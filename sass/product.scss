@@ -1,0 +1,677 @@
+@import "public";
+$activeColor:#006db6;
+/*banner*/
+#banner-wrap{
+  @include wrap;
+  height:197px;
+  position: relative;
+  overflow: hidden;
+  .bannerImg{
+    @include absolute(0,50%);
+    margin-left: -960px;
+    z-index: -1;
+  }
+}
+#banner{
+  height:197px;
+  @include content;
+  position: relative;
+  p{
+    @include absolute(70px,145px);
+    font-size: 35px;
+  }
+}
+
+/*content*/
+$contentTopH:52px;
+#content-top-wrap{
+  @include wrap;
+  border-bottom: 1px solid #b5b5b5;
+  background-color: #fff;
+  top:0;
+  left:0;
+  z-index: 2;
+  .content-top{
+    @include content;
+    height:$contentTopH;
+  }
+  .left{
+    width:400px;
+    height:$contentTopH;
+  }
+  ul{
+    li{
+      width: 100px;
+      line-height: $contentTopH;
+      height:$contentTopH;
+      float: left;
+      font-size: 23px;
+      margin-right:30px;
+      position: relative;
+      a{
+        color:#333;
+        display: inline-block;
+        width:100%;
+        img{
+          position: relative;
+          top:-2px;
+          left:10px;
+        }
+      }
+      a.active{
+        //color:$activeColor;
+
+      }
+      .childDiv{
+
+        display: none;
+        @include absolute(45px,-23px);
+        @include transition();
+        box-sizing: border-box;
+        width:115px;
+        border-radius: 5px;
+        border:1px solid #cdcdcd;
+        background-color: #fff;
+        .triangle{
+          width:10px;
+          height:10px;
+          background-color: #fff;
+          border-right:1px solid #cdcdcd;
+          border-top:1px solid #cdcdcd;
+          @include rotate(-45deg);
+          @include absolute(-7px,50%);
+          margin-left:-7px;
+        }
+        ul{
+          overflow: hidden;
+          margin:8px 0;
+          li{
+            margin:0;
+            width:100%;
+            font-size:14px;
+            line-height: 25px;
+            height:auto;
+            text-align: center;
+            a{
+              color:#7e8083;
+            }
+            a:hover{
+              color:$activeColor;
+            }
+          }
+        }
+      }
+    }
+    li:hover{
+      .childDiv{
+        display: inherit;
+      }
+    }
+    li.active{
+      a{
+        color:$activeColor;
+      }
+    }
+  }
+  .right{
+    width: 310px;
+    height:$contentTopH;
+    a{
+      display: inline-block;
+      width:100px;
+      height:$contentTopH;
+      text-align: center;
+      line-height: $contentTopH;
+      font-size: 16px;
+      color:#666;
+    }
+  }
+}
+.product-item{
+  overflow: hidden;
+  .definition{
+    overflow: hidden;
+    .quotes{
+      float: left;
+      margin-right:26px;
+    }
+    .describe{
+      float: left;
+      color:#555;
+      width:525px;
+      font-size: 14px;
+      line-height: 28px;
+      word-wrap: break-word;
+    }
+  }
+  .introduction{
+    width:100%;
+  }
+  .product-name{
+    color:$activeColor;
+    font-size:35px;
+    .loginSms{
+      margin-left:5px;
+      font-size:16px;
+      color:#f00;
+    }
+  }
+  .title{
+    overflow: hidden;
+
+    position: relative;
+    height:25px;
+    p{
+      font-size: 25px;
+      padding:0 35px;
+      background-color: #fff;
+      position: absolute;
+      height:25px;
+      left:50%;
+      margin-left:-85px;
+      img{
+        position: absolute;
+        top:17px;
+      }
+      .leftImg{
+        left:-123px;
+      }
+      .rightImg{
+        right:-123px;
+      }
+    }
+
+  }
+  .sceneItemBox{
+    padding-top:10px;
+    height:140px;
+    .sceneItem{
+      float: left;
+      height:140px;
+      width:242px;
+      position: relative;
+      border-radius: 5px;
+      overflow: hidden;
+      .buttons{
+
+        p{
+          font-size: 12px;
+          color:#fff;
+          line-height: 18px;
+          padding:0 15px;
+        }
+        .zzTitle{
+          font-size: 18px;
+          line-height: 32px;
+          height:32px;
+          img{
+            height:20px;
+            width:124px;
+            margin-top:8px;
+          }
+        }
+
+      }
+    }
+
+
+  }
+}
+/*communication*/
+#communication-wrap{
+  @include wrap;
+  background-color: #fff
+}
+#communication{
+  .introductionClass{
+    overflow: hidden;
+  }
+  @include content;
+
+  .imgShow{
+    padding-top:66px;
+  }
+  .communication{
+    .product-name{
+      margin:48px 0 37px;
+    }
+    .leftBox{
+      width:615px;
+      margin-right:85px;
+    }
+    .title{
+      padding:34px 0;
+    }
+    .introduction{
+      .title{
+        padding:70px 0 60px;
+      }
+      .right{
+        width:1210px;
+        padding-bottom:10px;
+        .group{
+          overflow: hidden;
+        }
+
+        .item{
+          width: 350px;
+          float: left;
+          margin:0 25px 40px 25px;
+          box-sizing: border-box;
+          .imgBox{
+            float: left;
+            margin-right:18px;
+            width: 70px;
+            height:70px;
+            border-radius: 50%;
+            border:1px solid $activeColor;
+            box-sizing: border-box;
+            text-align: center;
+            img{
+              position: relative;
+              top:20px;
+            }
+          }
+          p{
+            float: left;
+            width:260px;
+            span{
+              color:#666;
+              font-size: 13px;
+              line-height: 20px;
+            }
+            .title{
+              font-size: 20px;
+              color:#333;
+              line-height: 20px;
+              display: block;
+              padding:0;
+              margin-bottom: 5px;
+            }
+          }
+        }
+      }
+
+      .introductionClassS{
+        margin-top:30px;
+        margin-bottom: 55px;
+        overflow: hidden;
+      }
+    }
+    .scene{
+      width: 100%;
+      .zzTitle{
+        margin-top:5px;
+      }
+      .title{
+        padding:19px 0 40px;
+      }
+      .sceneItem:nth-child(2){
+        margin:0 77px;
+      }
+      .sceneItem:first-child + .sceneItem{
+        margin:0 77px;
+      }
+      .sceneItem:nth-child(3){
+        margin-right:77px;
+      }
+      .sceneItem:first-child + .sceneItem +.sceneItem{
+        margin-right:77px;
+      }
+    }
+    .advantage{
+      height:135px;
+      background: url(#{$baseUrl}telys.png) no-repeat ;
+      background-position:left center ;
+      div{
+        float: left;
+        padding-left: 60px;
+        height:90px;
+        color:#666;
+        font-size: 14px;
+        line-height: 20px;
+      }
+      div:nth-child(1){
+        width:142px;
+      }
+      div:first-child{
+        width:142px;
+      }
+      div:nth-child(2){
+        width:163px;
+      }
+      div:first-child + div{
+        width:163px;
+      }
+      div:nth-child(3){
+        width:130px;
+      }
+      div:first-child + div +div{
+        width:130px;
+      }
+      div:nth-child(4){
+        width:142px;
+      }
+      div:first-child + div + div + div{
+        width:142px;
+      }
+      div:nth-child(5){
+        width:163px;
+      }
+      div:first-child + div + div + div + div{
+        width:163px;
+      }
+      div:nth-child(6){
+        width:130px;
+      }
+      div:first-child + div + div + div + div + div{
+        width:130px;
+      }
+    }
+  }
+  .administration{
+    background-color: #eaeef1;
+    height:1360px;
+  }
+}
+#communication .btn03:hover .nr{
+    height:90px;
+}
+/*administration*/
+#administration-wrap{@include wrap;background: #eaeef1;}
+#administration{
+  @include content;
+  .imgShow{
+    margin-top:80px;
+  }
+  .definition{
+    margin-top:85px;
+  }
+  .product-name{
+    margin-bottom: 55px;
+  }
+  .adv{
+    margin-top:45px;
+  }
+  .describe{
+    width:470px;
+    font-size: 18px;
+    line-height: 30px;
+    color:#666;
+  }
+  .introduction{
+    .title{
+      padding:65px 0 45px;
+      p{
+        background: #eaeef1;
+      }
+    }
+      .group{
+        overflow: hidden;
+      }
+      .item:nth-child(odd){
+        margin-right:70px;
+      }
+      .item:nth-child(even){
+        margin-right:60px;
+      }
+      .item{
+        width:300px;
+        margin:0!important;
+        margin-bottom:40px!important;
+        float: left;
+        .imgBox{
+          float: left;
+          margin-right:18px;
+          width: 100px;
+          height:100px;
+          border-radius: 50%;
+          border:1px solid $activeColor;
+          box-sizing: border-box;
+          text-align: center;
+          span{
+            height:100%;
+            display: inline-block;
+            vertical-align:middle;
+          }
+          img{
+            vertical-align:middle;
+          }
+        }
+        p{
+          float: left;
+          width:180px;
+          margin-top:15px;
+          span{
+            color:#666;
+            font-size: 14px;
+            line-height: 20px;
+          }
+          .title{
+            font-size: 20px;
+            color:#333;
+            line-height: 20px;
+            display: block;
+            padding:0;
+            margin-bottom: 5px;
+          }
+        }
+      }
+
+  }
+  .sceneL{
+    width: 100%;
+
+    .title{
+      padding:75px 0 65px;
+      p{
+        background-color: #eaeef1;
+      }
+    }
+    .sceneItemBox{
+      height:225px;
+      margin-bottom: 110px;
+      .sceneItem{
+        width:380px;
+        height:225px;
+        .buttons{
+          p{
+            padding-left:35px ;
+            padding-right: 30px;
+            line-height: 21px;
+          }
+          .zzTitle{
+            line-height: 35px;
+            margin-bottom:10px;
+            margin-top:20px;
+          }
+          .nr{
+            height:44px;
+            padding-left:50px;
+            font-size:13px;
+          }
+        }
+      }
+      .sceneItem:nth-child(1){
+        margin-left:125px;
+        margin-right:120px;
+      }
+      .sceneItem:first-child{
+        margin-left:125px;
+        margin-right:120px;
+      }
+      .sceneItem:hover .nr{
+        height:225px;
+      }
+    }
+  }
+}
+#administration .btn03:hover .nr{
+  height:150px;
+}
+/*marketing*/
+#marketing-wrap{@include wrap;margin-bottom:40px;background-color: #fff}
+#marketing{
+  @include content;
+  .administration{
+   overflow: hidden;
+    margin-top: 55px;
+    .definition{
+      div{
+        overflow: hidden;
+        width: 530px;
+        margin-left:60px;
+      }
+    }
+    .describe{
+      width:440px;
+      a{
+        display:inline-block;
+        width:350px;
+        height:43px;
+        background-color:#f2f2f2;
+        color:#006db6;
+        line-height:43px;
+        margin-top:40px;
+        border:1px solid #d8d8d8;
+        font-size:17px;
+        img{
+          position:relative;
+          top:5px;
+          margin-left:20px;
+        }
+        span{
+          color:#d8d8d8;
+        }
+      }
+    }
+    .product-name{
+      margin-bottom: 50px;
+    }
+  }
+  .introduction{
+    .title{
+      padding:35px 0 43px;
+    }
+    .group{
+      overflow: hidden;
+      margin:0 auto;
+      width: 1030px;
+      .item:last-child{
+        margin-right: 0;
+      }
+    }
+    .item {
+      width: 290px;
+      float: left;
+      margin-right:50px;
+      margin-bottom: 55px;
+      box-sizing: border-box;
+      .imgBox {
+        float: left;
+        margin-right: 18px;
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        border: 1px solid #006db6;
+        box-sizing: border-box;
+        text-align: center;
+
+        span {
+          height: 100%;
+          display: inline-block;
+          vertical-align: middle;
+        }
+        img{
+          vertical-align: middle;
+        }
+      }
+      p{
+        float:left;
+        width:180px;
+        span{
+          color:#666;
+          font-size: 14px;
+          line-height: 20px;
+        }
+        .title{
+          font-size: 20px;
+          color:#333;
+          line-height: 20px;
+          display: block;
+          padding:0;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+  .sceneL{
+    width: 100%;
+    margin-top:-40px;
+    .title{
+      padding:30px 0 15px;
+    }
+    .sceneItemBox{
+      height:auto;
+      width:1050px;
+      margin:0 auto;
+      .group{
+        overflow: hidden;
+        padding-top:45px;
+        padding-bottom: 25px;
+        .class{
+          width:240px;
+          text-align: right;
+          overflow: hidden;
+          float: left;
+          margin-right:60px;
+          p{
+            height:38px;
+            font-size: 20px;
+            color:#323232;
+
+          }
+          .line{
+            width:53px;
+            height:2px;
+            background-color: #5a9bef;
+            margin-left:185px;
+          }
+        }
+        .sceneItem{
+          width:346px;
+          height:180px;
+          margin-bottom:30px;
+          p{
+            line-height: 20px;
+          }
+          .zzTitle{
+            margin:10px 0;
+            height:18px;
+          }
+        }
+        .first{
+          margin-right:50px;
+        }
+      }
+      .group:first-child{
+        border-bottom: 1px dashed #ccc;
+        .sceneItem {
+          .nr{
+            font-size: 13px;
+            margin-top:14px;
+          }
+
+        }
+      }
+    }
+  }
+}
+#marketing .btn03:hover {
+  .zzTitle{
+    margin-top: 20px !important;
+  }
+  .nr{
+    height:140px;
+  }
+}

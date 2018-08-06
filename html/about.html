@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name=”renderer” content=”webkit” />
+    <meta name="keywords" content="移动协同办公，移动考勤，移动审批，移动CRM，定位轨迹，客户管理，销售管理，HCM，SaaS" />
+    <meta name="description" content="爱到位-位智天下股份有限公司，中国自主SaaS行业领先者，秉承让管理更到位的产品理念，全面管理企业日常工作，涵盖云通讯、云管理和云营销，致力于让客户便捷、高效、更好性价比地运营管理和服务。" />
+    <meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Expires" content="0">
+    <script src="./../js/lib/jquery-1.9.1.js"></script>
+    <script src="http://api.map.baidu.com/api?v=2.0&ak=FD875602aba2509d2e43a52b98cf7b7f&s=1&callback=initialize"></script>
+    <title>关于我们</title>
+    <link rel="stylesheet" href="./../css/about.css">
+    <link rel="shortcut icon" type="image/x-icon" href="http://www.idaowei.com/idaowei.ico" media="screen" />
+</head> 
+<body>
+<a name="companyAbout"></a>
+<!--头部开始-->
+<div id="header-wrap">
+    <div id="Header" >
+        <a href="./../index.html"><img src="./../images/logo.png" alt="" class="logo"></a>
+         <span class="securities-wrap">【<span class="securities">证券代码</span>：872156】</span>
+        <div class="login-box floatR" id="formdiv">
+            <form id="loginForm" onkeydown="if(event.keyCode==13){Login.logon(true);}">
+                <div class="form-gruop floatL">
+                    <span>用户名：</span><input type="text" id="username" name="username" placeholder="请输入用户名">
+                </div>
+                <div class="form-gruop floatL">
+                    <span>密码：</span><input type="password" id="password" name="password" placeholder="请输入密码">
+                </div>
+                <div class="form-gruop floatL">
+                    <a id="loginBtn" href="javascript:Login.logon(true)"> 登录 <span >Login</span></a>
+                </div>
+            </form>
+        </div>
+        <div class="login-box floatR" style="display: none;" id="logindiv">
+            <div class="form-gruop floatL">
+                您好，您已登录位智天下后台管理系统
+            </div>
+            <div class="form-gruop floatL">
+                <a href="javascript:Login.logout();">注销</a>
+                <a href="javascript:Login.login(true);">进入</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--头部结束-->
+<!--导航开始-->
+<div id="nav-wrap">
+    <div id="nav">
+        <div class="tel floatL">
+            <div class="floatL">
+                <img src="./../images/phone.png" alt="">
+            </div>
+            <div class="floatR">
+                <p>400-055-5089</p>
+                <p>010-56629933</p>
+            </div>
+        </div>
+        <ul class="nav floatL" id="firstNav">
+            <li>
+                <a href="./../html/product.html">产品</a>
+                <div class="childNav childNav-first">
+                    <div class="productAbout">
+                        <div class="productUpgrade">
+                            <div class="content">
+                                <p class="title">产品升级</p>
+                                <ul>
+                                    <li class="new">
+                                        <a href="./productAction.html?active=1">
+                                            <span class="data">2018-04-13</span>
+                                            <span class="edition">
+                                                <img src="./../images/productUpgradeNow.png" alt="">
+                                            </span>i到位V9.0</a>
+                                    </li>
+                                    <li>
+                                        <a href="./productAction.html?active=1">
+                                            <span class="data">2018-03-09</span>
+                                            <span class="edition">
+                                                <img src="./../images/productUpgrade.png" alt="">i到位V8.9</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./productAction.html?active=1">
+                                            <span class="data">2017-12-27</span>
+                                            <span class="edition">
+                                                <img src="./../images/productUpgrade.png" alt="">i到位V8.8</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <a href="./../html/productAction.html?active=1" class="floatR moreUpgrade">更多升级></a>
+                            </div>
+                        </div>
+                        <div class="productDownLoad">
+                            <p class="title floatL">产品下载</p>
+                            <img class="floatR" src="./../images/toperwm.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="product">
+                        <a href="./../html/product.html#communication">
+                            <div class="groupItem">
+                                <p class="title">云通讯</p>
+                                <p class="content">为企业提供全面的互联网通讯服<br />务,轻松实现企业通讯能力</p>
+                                <p class="introductionTitle">服务优势</p>
+                                <p class="content">快、高、广、便利、安全、无忧</p>
+                                <p class="introductionTitle">应用场景</p>
+                                <p class="content">验证码、通知提醒、热线菜单可视化、<br />热线名片</p>
+                                <p class="introductionTitle">功能介绍</p>
+                                <p class="content">i信、企业短信、视频会议、一卡多号、企业名片、通话签名<p>
+                            </div>
+                        </a>
+                        <a href="./../html/product.html#administration">
+                            <div class="groupItem">
+                                <p class="title">云管理</p>
+                                <p class="content">以云端大数据为依托,一体化解决企业<br/>整体管理效率问题。</p>
+                                <p class="introductionTitle">服务价值</p>
+                                <p class="content">互联网+、量身定制、解决滞后、真实<br/>透明、掌控全局、链接客户、时间掌控</p>
+                                <p class="introductionTitle">应用场景</p>
+                                <p class="content">跨区域销售管理、销售与专家协同管理<p>
+                            </div>
+                        </a>
+                        <a href="./../html/product.html#marketing">
+                            <div class="groupItem">
+                                <p class="title">云营销</p>
+                                <p class="content">为企业提供智能数字化营销服务平台,<br />全面提升企业品牌覆盖和营销效果</p>
+                                <p class="introductionTitle">服务优势</p>
+                                <p class="content">智能情报分析、营销诊断精准、<br/>用户覆盖广、投放精准、数据监测</p>
+                                <p class="introductionTitle">服务能力</p>
+                                <p class="content">建立企业信息布局、DECOS-Ad平台精准投放</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li><a href="./../html/customer.html">客户</a></li>
+            <li>
+                <a href="./../html/activity.html">观点</a>
+                <div class="childNav childNav-second">
+                    <ul>
+                        <li><a href="./../html/activity.html?active=0">位智观点</a></li>
+                        <li><a href="./../html/activity.html?active=1">新闻动态</a></li>
+                        <li><a href="./../html/activity.html?active=2">公司文化</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="active">
+                <a href="./../html/about.html">关于我们</a>
+                <div class="childNav childNav-third">
+                    <ul>
+                        <li><a href="./../html/about.html#companyAbout">公司概述</a></li>
+                        <li><a href="./../html/about.html#qualifications">荣誉资质</a></li>
+                        <li><a href="./../html/about.html#cultural">文化氛围</a></li>
+                        <li><a href="./../html/about.html#joinUs">加入我们</a></li>
+                        <li><a href="./../html/about.html#contact">联系方式</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="./../html/about-contact.html">联系我们</a></li>
+        </ul>
+        <div class="nav-right floatR">
+            <ul>
+                <li><a href="./../html/about-contact.html"><span>订购咨询</span></a></li>
+                <li><a href="./../html/reg.html"><span>免费试用</span></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--导航结束-->
+<!--banner部分-->
+<div class="left-space" id="floorLeft">
+    <div>
+        <a class="toTop" href="javascript:toTop();">
+            <img src="./../images/toTop.png" alt=""><br/>
+            <span>返回顶部</span>
+        </a>
+    </div>
+    <ul class="nav">
+        <li class="active"><a href="#companyAbout">公司概述</a></li>
+        <li><a href="#qualifications">荣誉资质</a></li>
+        <li><a href="#cultural">文化氛围</a></li>
+        <li><a href="#joinUs">加入我们</a></li>
+        <li><a href="#contact">联系方式</a></li>
+    </ul>
+    <p>
+        联系我们<br />
+        <span>400-055-5089</span>
+    </p>
+</div>
+<div id="banner-wrap">
+    <img src="./../images/aboutBg.jpg" alt="" class="bannerImg">
+    <div id="banner">
+
+        <div class="left-space"></div>
+        <div class="right-space">
+
+            <p class="title">公司概述</p>
+            <p class="des">中国自主SaaS行业领先者，本着诚信责任的原则，致力于颠覆传统软件行业的服务模式，提供互联网软件服务。自公司i到位云平台上线以来，秉承“<span class="blue">让管理更到位</span>”的品牌口号，积极推动理念、产品、技术、营销等全方位创新，为用户提供优质、稳定、高效的专业服务体验，致力于让客户便捷、高效、更好性价比地运营管理和服务。目前，i到位已成功构建了包含云通讯、云管理、云营销等业务在内的下一代企业核心系统<img src="./../images/logo2.png"/>，引领SaaS商业模式的全面发展。</p>
+        </div>
+    </div>
+
+</div>
+<!--banner结束-->
+<!--content部分开始-->
+<a name="qualifications"></a>
+<div id="content-wrap">
+    <div id="content">
+        <div class="left-space">
+
+        </div>
+
+        <div class="right-space">
+            <!--荣誉资质-->
+            <div class="qualifications">
+
+                <p class="title">荣誉资质</p>
+                <div class="hrline">
+                    <img src="./../images/hrline.png" alt="">
+                </div>
+                <ul class="timeover">
+                    <li>2017年</li>
+                    <li>2016年</li>
+                    <li>2016年</li>
+                    <li>2015年</li>
+                    <li>2014年</li>
+                </ul>
+                <ul class="qualifications-content">
+                    <li><div class="ball"></div><p>恭贺北京位智天下科技股份有限公司成立</p></li>
+                    <li><div class="ball"></div><p>2016年7月1日，恭贺北京爱到位科技有限公司荣获中关村高新技术企业</p></li>
+                    <li><div class="ball"></div><p>2016年5月18日，恭贺北京位智天下技术有限公司荣获中关村企业信用促进会会员证书</p></li>
+                    <li><div class="ball"></div><p>2015年10月13日，恭贺北京位智天下技术有限公司荣获中关村高新技术企业</p></li>
+                    <li><div class="ball"></div><p>2014年10月30日，恭贺北京位智天下技术有限公司荣获高新技术企业证书</p></li>
+                </ul>
+            </div>
+            <!--文化氛围-->
+            <a name="cultural"></a>
+            <div class="cultural ">
+
+                <p class="title">文化氛围</p>
+                <div class="hrline">
+                    <img src="./../images/hrline.png" alt="">
+                </div>
+                <div class="culturalImg">
+                    <img src="./../images/cultural.jpg" alt="" >
+                </div>
+                <p class="article">
+                    公司团队系出名门大牛云集，团队成员来自搜狐、搜狗、百度、阿里巴巴、赶集等知名互联网公司。执着于技术和创新的追求，致力于帮助企业升级为数字化管理型企业（俗称互联网+）<br />
+                    公司为员工提供舒适的办公环境和便利的工作条件，让每一位员工在工作时都能有舒适温馨的感受，更加专注于工作，实现个人价值的突破
+                </p>
+            </div>
+            <a name="joinUs"></a>
+            <!--加入我们-->
+            <div class="joinUs">
+
+                <p class="title">加入我们</p>
+                <!--<div class="hrline">-->
+                    <!--<img src="./../images/hrline.png" alt="">-->
+                <!--</div>-->
+                <div>
+                    <p class="alt">
+                        加入i到位,超级战队就差你了<br />Join Us
+                    </p>
+                    <img src="./../images/joinUs.jpg" alt="">
+                </div>
+            </div>
+            <!--招聘-->
+            <div class="recruit">
+                <div class="item">
+                    <p class="title">大客户销售经理（5人）</p>
+                    <p class="work">
+                        <span class="nature">工作性质：全职</span>
+                        <span>工作地点：北京、宁波、四川</span>
+                    </p>
+                    <p class="secTitle">岗位描述</p>
+                    <ul>
+                        <li>1.制定客户开发计划，执行并完成相关业绩指标</li>
+                        <li>2.客户的开发与维系，针对客户的反馈及时处理和协调</li>
+                        <li>3.挖掘客户对产品的需求，为客户提供专业的服务</li>
+                    </ul>
+                    <p class="secTitle">任职要求</p>
+                    <ul>
+                        <li>1.具备1年以上销售经验</li>
+                        <li>2.热爱销售工作，具备优秀的人际关系能力，待人真诚，亲和力强</li>
+                        <li>3.具备良好的团队合作意识，思路清晰，良好的语言表达能力</li>
+                        <li>4.表达能力强，良好的客户服务意识</li>
+                        <li>5.了解或愿意从事互联网，移动互联网行业销售</li>
+                    </ul>
+                    <p class="care">特别备注：有广告、医药、教育培训、金融行业从业经验优先</p>
+                </div>
+                <div class="item">
+                    <p class="title">售前技术解决方案经理（2人）</p>
+                    <p class="work">
+                        <span class="nature">工作性质：全职</span>
+                        <span>工作地点：北京、四川</span>
+                    </p>
+                    <p class="secTitle">岗位描述</p>
+                    <ul>
+                        <li>1.两年以上银行IT系统销售解决方案工作经验（必备）,且独立参与过大型投标项目并成功运作</li>
+                        <li>2.负责为客户讲解、演示公司产品和方案</li>
+                        <li>3.负责公司各个产品，解决方案的撰写</li>
+                        <li>4.负责对客户进行公司各个产品的技术培训，以及技术交流</li>
+                    </ul>
+                    <p class="secTitle">任职要求</p>
+                    <ul>
+                        <li>1.两年以上银行IT系统销售解决方案工作经验（必备）,且独立参与过大型投标项目并成功运作</li>
+                        <li>2.两年以上安全产品售前/售后经验</li>
+                        <li>3.熟悉信息安全相关技术</li>
+                        <li>4.形象良好，语言表达和思维逻辑清晰、性格乐观、能承受压力</li>
+                        <li>5.有较强的学习能力，为人踏实稳重，有高度责任心</li>
+                    </ul>
+                </div>
+            </div>
+            <a name="contact"></a>
+            <!--联系我们-->
+            <div class="contact">
+
+                <p class="title">联系方式</p>
+                <ul class="contactInformation">
+                    <li><span>电话：</span>400-055-5089，010-56629933</li>
+                    <li><span>传真：</span>010-62684253</li>
+                    <li><span>Mail: </span>bjhr@idaowei.com</li>
+                </ul>
+            </div>
+            <!--地图-->
+            <div class="map">
+                <div class="imgBox floatL" id="map">
+
+                </div>
+                <div class="companyList floatL" id="companyList">
+                    <div class="item">
+                        <div class="number floatL">
+                            1
+                        </div>
+                        <div class="content floatL">
+                            <p class="name">北京位智</p>
+                            <p>地址：北京市海淀区东北旺南路29号首农蓝海中心C座8层</p>
+                            <p>电话：010-56629933</p>
+                            <p>传真：010-62684253</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="number floatL">
+                            2
+                        </div>
+                        <div class="content floatL">
+                            <p class="name">长春爱到位</p>
+                            <p>地址：吉林省长春市高新区硅谷大街2888号吉林动漫游戏原创产业园7层</p>
+                            <p>电话：0431-89655558</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="number floatL">
+                           3
+                        </div>
+                        <div class="content floatL">
+                            <p class="name">河南爱到位</p>
+                            <p>地址：河南省新乡市红旗区新东大道166号863科技园区</p>
+                            <p>手机：13331002962</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="number floatL">
+                            4
+                        </div>
+                        <div class="content floatL">
+                            <p class="name">成都爱到位</p>
+                            <p>地址：成都市锦江区东御街19号茂业天地A座38楼</p>
+                            <p>电话：13808085651</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="number floatL">
+                            5
+                        </div>
+                        <div class="content floatL">
+                            <p class="name">宁波爱到位</p>
+                            <p>地址：浙江省宁波市江北区盛悦大厦9层</p>
+                            <p>手机：13958243595</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--content部分结束-->
+
+<!--footer部分开始-->
+<div id="footer-wrap">
+    <div id="footer" >
+        <div class="footer-left  floatL">
+            <div >
+                <ul class="function">
+                    <li><a href="./productAction.html#clockinM">考勤</a></li>
+                    <li><a href="./productAction.html#shenpi">审批</a></li>
+                    <li><a href="./productAction.html#kehuguanli">客户</a></li>
+                    <li><a href="./productAction.html#kehubaifang">拜访</a></li>
+                    <li><a href="./productAction.html#sales">销售</a></li>
+                    <li><a href="./productAction.html#dingdanguanli">订单</a></li>
+                    <li><a href="./productAction.html#contacts">人脉</a></li>
+                    <li><a href="./productAction.html#dingwei">送货追踪</a></li>
+                </ul>
+                <ul class="share">
+                    <li><a target="_blank" href="http://weibo.com/idaowei?refer_flag=1001030102_"><img class="imgFirst" src="./../images/shareSina.png" alt=""><img class="imgSecond" src="./../images/shareSinaH.png" alt=""></a></li>
+                    <li class="shareWx">
+                        <a target="_blank" href="javascript:;"><img class="imgFirst" src="./../images/sharewx.png" alt=""><img class="imgSecond" src="./../images/sharewxH.png" alt=""></a>
+                        <div><img src="./../images/code.jpg" alt=""></div>
+                    </li>
+
+                </ul>
+            </div>
+            <div >
+                <p class="record">Copyright 2010-2017 idaowei.com All Rights Reserved 京ICP备11019734号-2 京公网安备11010802013421号</p>
+            </div>
+        </div>
+        <div class="footer-right floatR">
+            <img src="./../images/footer-wx.png" alt="">
+        </div>
+    </div>
+</div>
+
+<!--footer部分结束-->
+<div id="aside">
+    <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2929809574&site=qq&menu=yes">
+        <img src="./../images/customerServide.png" alt="">在线咨询
+    </a>
+</div>
+<script src="./../js/about.js"></script>
+<script type="text/javascript" src="./../js/Constant.js"></script>
+<script type="text/javascript" src="./../js/CommonResource.js"></script>
+<script type="text/javascript" src="./../js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name=”renderer” content=”webkit” />
+    <meta name="keywords" content="移动协同办公，移动考勤，移动审批，移动CRM，定位轨迹，客户管理，销售管理，HCM，SaaS" />
+    <meta name="description" content="爱到位-位智天下股份有限公司，中国自主SaaS行业领先者，秉承让管理更到位的产品理念，全面管理企业日常工作，涵盖云通讯、云管理和云营销，致力于让客户便捷、高效、更好性价比地运营管理和服务。" />
+    <meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Expires" content="0">
+    <script src="./../js/lib/jquery-1.9.1.js"></script>
+    <script src="./../js/selectInit.js" type="text/javascript"></script>
+    <script type="text/javascript" src="./../js/Constant.js"></script>
+    <script src="./../js/CommonResource.js" type="text/javascript"></script>
+    <script src="./../js/ProvinceCityUtils.js" type="text/javascript"></script>
+    <script src="./../js/jGrowl.js" type="text/javascript"></script>
+    <script src="./../js/jquery.validate.js" type="text/javascript"></script>
+    <script src="./../js/menu.js"></script>
+    <script type="text/javascript" src="./../js/login.js"></script>
+    <title>联系我们</title>
+    <link rel="stylesheet" href="./../css/about-contact.css">
+    <link rel="shortcut icon" type="image/x-icon" href="http://www.idaowei.com/idaowei.ico" media="screen" />
+</head>
+<body>
+<!--头部开始-->
+<div id="header-wrap">
+    <div id="Header" >
+        <a href="./../index.html"><img src="./../images/logo.png" alt="" class="logo"></a>
+        <span class="securities-wrap">【<span class="securities">证券代码</span>：872156】</span>
+        <div class="login-box floatR" id="formdiv">
+            <form id="loginForm" onkeydown="if(event.keyCode==13){Login.logon(true);}">
+                <div class="form-gruop floatL">
+                    <span>用户名：</span><input type="text" id="username" name="username" placeholder="请输入用户名">
+                </div>
+                <div class="form-gruop floatL">
+                    <span>密码：</span><input type="password" id="password" name="password" placeholder="请输入密码">
+                </div>
+                <div class="form-gruop floatL">
+                    <a id="loginBtn" href="javascript:Login.logon(true)"> 登录 <span >Login</span></a>
+                </div>
+            </form>
+        </div>
+        <div class="login-box floatR" style="display: none;" id="logindiv">
+            <div class="form-gruop floatL">
+                您好，您已登录位智天下后台管理系统
+            </div>
+            <div class="form-gruop floatL">
+                <a href="javascript:Login.logout();">注销</a>
+                <a href="javascript:Login.login(true);">进入</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--头部结束-->
+<!--导航开始-->
+<div id="nav-wrap">
+    <div id="nav">
+        <div class="tel floatL">
+            <div class="floatL">
+                <img src="./../images/phone.png" alt="">
+            </div>
+            <div class="floatR">
+                <p>400-055-5089</p>
+                <p>010-56629933</p>
+            </div>
+        </div>
+        <ul class="nav floatL" id="firstNav">
+            <li>
+                <a href="./../html/product.html">产品</a>
+                <div class="childNav childNav-first">
+                    <div class="productAbout">
+                        <div class="productUpgrade">
+                            <div class="content">
+                                <p class="title">产品升级</p>
+                                <ul>
+                                    <li class="new"><a href="./productAction.html?active=1"><span class="data">2018-04-13</span><span class="edition"><img src="./../images/productUpgradeNow.png" alt=""></span>i到位V9.0</a></li>
+                                    <li><a href="./productAction.html?active=1"><span class="data">2018-03-09</span><span class="edition"><img src="./../images/productUpgrade.png" alt="">i到位V8.9</span></a></li>
+                                    <li><a href="./productAction.html?active=1"><span class="data">2017-12-27</span><span class="edition"><img src="./../images/productUpgrade.png" alt="">i到位V8.8</span></a></li>
+                                </ul>
+                                <a href="./../html/productAction.html?active=1" class="floatR moreUpgrade">更多升级></a>
+                            </div>
+                        </div>
+                        <div class="productDownLoad">
+                            <p class="title floatL">产品下载</p>
+                            <img class="floatR" src="./../images/toperwm.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="product">
+                        <a href="./../html/product.html#communication">
+                            <div class="groupItem">
+                                <p class="title">云通讯</p>
+                                <p class="content">为企业提供全面的互联网通讯服<br />务,轻松实现企业通讯能力</p>
+                                <p class="introductionTitle">服务优势</p>
+                                <p class="content">快、高、广、便利、安全、无忧</p>
+                                <p class="introductionTitle">应用场景</p>
+                                <p class="content">验证码、通知提醒、热线菜单可视化、<br />热线名片</p>
+                                <p class="introductionTitle">功能介绍</p>
+                                <p class="content">i信、企业短信、视频会议、一卡多号、企业名片、通话签名<p>
+                            </div>
+                        </a>
+                        <a href="./../html/product.html#administration">
+                            <div class="groupItem">
+                                <p class="title">云管理</p>
+                                <p class="content">以云端大数据为依托,一体化解决企业<br/>整体管理效率问题。</p>
+                                <p class="introductionTitle">服务价值</p>
+                                <p class="content">互联网+、量身定制、解决滞后、真实<br/>透明、掌控全局、链接客户、时间掌控</p>
+                                <p class="introductionTitle">应用场景</p>
+                                <p class="content">跨区域销售管理、销售与专家协同管理<p>
+                            </div>
+                        </a>
+                        <a href="./../html/product.html#marketing">
+                            <div class="groupItem">
+                                <p class="title">云营销</p>
+                                <p class="content">为企业提供智能数字化营销服务平台,<br />全面提升企业品牌覆盖和营销效果</p>
+                                <p class="introductionTitle">服务优势</p>
+                                <p class="content">智能情报分析、营销诊断精准、<br/>用户覆盖广、投放精准、数据监测</p>
+                                <p class="introductionTitle">服务能力</p>
+                                <p class="content">建立企业信息布局、DECOS-Ad平台精准投放</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li><a href="./../html/customer.html">客户</a></li>
+            <li>
+                <a href="./../html/activity.html">观点</a>
+                <div class="childNav childNav-second">
+                    <ul>
+                        <li><a href="./../html/activity.html?active=0">位智观点</a></li>
+                        <li><a href="./../html/activity.html?active=1">新闻动态</a></li>
+                        <li><a href="./../html/activity.html?active=2">公司文化</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="./../html/about.html">关于我们</a>
+                <div class="childNav childNav-third">
+                    <ul>
+                        <li><a href="./../html/about.html#companyAbout">公司概述</a></li>
+                        <li><a href="./../html/about.html#qualifications">荣誉资质</a></li>
+                        <li><a href="./../html/about.html#cultural">文化氛围</a></li>
+                        <li><a href="./../html/about.html#joinUs">加入我们</a></li>
+                        <li><a href="./../html/about.html#contact">联系方式</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="active"><a href="./../html/about-contact.html">联系我们</a></li>
+        </ul>
+        <div class="nav-right floatR">
+            <ul>
+                <li><a href="./../html/about-contact.html"><span>订购咨询</span></a></li>
+                <li><a href="./../html/reg.html"><span>免费试用</span></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--导航结束-->
+
+<!--content部分开始-->
+<div id="content-wrap">
+    <div id="content">
+        <div class="left floatL" >
+            <img src="./../images/contact.jpg" alt="">
+            <p>i到位秉着提升、改造传统企业，改变原有企业发展节奏，提升运营管理效率，帮助企业重新建立一套互联网和企业融合的运营机制。</p><p>在管理模式、营销策略、创新方式、沟通链接等方面实现升级，探索企业营销互联网化、产品互联网化、服务互联网化、运营互联网化，以适应当前需求个性化、消费移动化、传播社交化的市场发展新趋势。实现企业数字化转型。</p>
+            <p>为您的企业提供最全面的的数字化服务平台。</p>
+            <p><br /><br />电话：400-055-5089，010-56629933<br />传真：010-62684253</p>
+        </div>
+        <div class="right floatL">
+            <div class="tableDiv">
+                <div id="send">
+                    <p class="title">订购咨询</p>
+                    <p class="des">请填写以下信息，我们会尽快联系您，为您提供产品咨询和购买服务！</p>
+                    <form method="post" class="niceform" id="order_form">
+                        <p id="alt">请填写所有字段</p>
+                        <div>
+                            <label for="comp_name"><span class="required">* </span>公司名称</label><input id="comp_name" name="comp_name" type="text" placeholder="请输入公司名称">
+                        </div>
+                        <div>
+                            <label ><span class="required">* </span>所在地区</label><center>
+                            <div id="area">
+                                <div class='diy_select'>
+                                    <input type='hidden' name='province' id="province_value" class='diy_select_input'/>
+                                    <div class='diy_select_txt' id="province_text">请选择</div>
+                                    <div class='diy_select_btn'></div>
+                                    <ul id="province_ul" class='diy_select_list'></ul>
+                                </div>
+
+                                <div class='diy_select' id="city_div">
+                                    <input type='hidden' name='city' id="city_value" class='diy_select_input'/>
+                                    <div class='diy_select_txt' id="city_text">请选择</div>
+                                    <div class='diy_select_btn'></div>
+                                    <ul id="city_ul" class='diy_select_list'></ul>
+                                </div>
+
+                                <div class='diy_select'>
+                                    <input type='hidden' name='country_id' id="country_value" class='diy_select_input'/>
+                                    <div class='diy_select_txt' id="country_text">请选择</div>
+                                    <div class='diy_select_btn'></div>
+                                    <ul id="country_ul" class='diy_select_list'></ul>
+                                </div>
+                            </div>
+                        </center>
+                        </div>
+                        <div>
+                            <label for="contactor"><span class="required">* </span>姓名</label><input id="contactor" name="contactor" type="text" placeholder="请输入姓名">
+                        </div>
+                        <div id="sexBox">
+                            <label><span class="required">* </span>性别</label>
+                            <input type="radio" name="sex" id="boy" value="0" checked="checked" /><label class="sexLabel" for="boy">&nbsp;&nbsp;男</label>
+                            <input type="radio" name="sex" id="girl" value="1"  /><label class="sexLabel" for="girl">&nbsp;&nbsp;女</label>
+                        </div>
+                        <div>
+                            <label for="telephone"><span class="required">* </span>联系电话</label><input id="telephone" name="telephone" type="text" placeholder="请输入联系电话">
+                        </div>
+                        <div>
+                            <label for="qq">QQ</label><input id="qq" name="qq" type="text" placeholder="请输入QQ">
+                        </div>
+                        <div>
+                            <label for="email">电子邮件</label><input id="email" name="email" type="text" placeholder="请输入电子邮件">
+                        </div>
+                        <p>发送给idaowei团队的消息</p>
+
+                        <textarea name="message" id="message" placeholder="在此输入您的消息"></textarea>
+                        <div class="form_btn"><button class="btn btn_send" id="order_btn" type="button">提交</button></div>
+                        <script type="text/javascript">
+                            var TTDiy_select=new diy_select({  //参数可选
+                                TTContainer:'diy_select',//控件的class
+                                TTDiy_select_input:'diy_select_input',//用于提交表单的class
+                                TTDiy_select_txt:'diy_select_txt',//diy_select用于显示当前选中内容的容器class
+                                TTDiy_select_btn:'diy_select_btn',//diy_select的打开按钮
+                                TTDiv_select_list:'diy_select_list',//要显示的下拉框内容列表class
+                                TTFcous:'focus'//得到焦点时的class
+                            });//如同时使用多个时请保持各class一致.
+                        </script>
+                    </form>
+                </div>
+                <div id="sendSucc">
+                    <img src="./../images/sendSucc.png" alt="">
+                    <p class="altSuc">提交成功</p>
+                    <p>您的信息已提交</p>
+                    <p>我们会在第一时间联系您</p>
+
+                    <a href="./../index.html">返回首页</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--content部分结束-->
+
+<!--footer部分开始-->
+<div id="footer-wrap">
+    <div id="footer" >
+        <div class="footer-left  floatL">
+            <div >
+                <ul class="function">
+                    <li><a href="./productAction.html#clockinM">考勤</a></li>
+                    <li><a href="./productAction.html#shenpi">审批</a></li>
+                    <li><a href="./productAction.html#kehuguanli">客户</a></li>
+                    <li><a href="./productAction.html#kehubaifang">拜访</a></li>
+                    <li><a href="./productAction.html#sales">销售</a></li>
+                    <li><a href="./productAction.html#dingdanguanli">订单</a></li>
+                    <li><a href="./productAction.html#contacts">人脉</a></li>
+                    <li><a href="./productAction.html#dingwei">送货追踪</a></li>
+                </ul>
+                <ul class="share">
+                    <li><a target="_blank" href="http://weibo.com/idaowei?refer_flag=1001030102_"><img class="imgFirst" src="./../images/shareSina.png" alt=""><img class="imgSecond" src="./../images/shareSinaH.png" alt=""></a></li>
+                    <li class="shareWx">
+                        <a target="_blank" href="javascript:;"><img class="imgFirst" src="./../images/sharewx.png" alt=""><img class="imgSecond" src="./../images/sharewxH.png" alt=""></a>
+                        <div><img src="./../images/code.jpg" alt=""></div>
+                    </li>
+
+                </ul>
+            </div>
+            <div >
+                <p class="record">Copyright 2010-2017 idaowei.com All Rights Reserved 京ICP备11019734号-2 京公网安备11010802013421号</p>
+            </div>
+        </div>
+        <div class="footer-right floatR">
+            <img src="./../images/footer-wx.png" alt="">
+        </div>
+    </div>
+</div>
+
+<!--footer部分结束-->
+<div id="aside">
+    <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2929809574&site=qq&menu=yes">
+        <img src="./../images/customerServide.png" alt="">在线咨询
+    </a>
+</div>
+<script src="./../js/about-contact.js"></script>
+
+</body>
+</html>

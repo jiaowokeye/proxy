@@ -1,0 +1,52 @@
+@import "public";
+#content-wrap{
+  @include wrap;
+}
+.textCenter{
+  text-align:center!important;
+}
+#content{
+  @include content;
+  overflow: hidden;
+  .news_title,.text_con{
+    margin:0 auto;
+  }
+  .news_title{
+    text-align: center;
+    margin:70px auto 0;
+    overflow: hidden;
+    padding-bottom:30px;
+    border-bottom: 1px solid #dcdcdc;
+    h2{
+      font-size: 21px;
+
+      line-height: 62px;
+      color:#505050;
+    }
+    .timer{
+      width:120px;
+      margin:0 auto;
+      font-size: 12px;
+      line-height: 30px;
+      color:#969696;
+      padding-left: 30px;
+      background: url(#{$baseUrl}time.png) 35px center no-repeat;
+    }
+  }
+  .text_con{
+      padding:0 65px;
+    p{
+      margin-bottom:33px;
+      line-height: 26px;
+      color:#4d4d4d;
+      text-indent: 32px;
+      img{
+        max-width: 100%;
+      }
+    }
+    p:first-child{
+      margin-top:50px;
+    }
+    
+  }
+}

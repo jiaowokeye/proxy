@@ -1,0 +1,217 @@
+@import "public";
+$color:#777;
+
+#content-wrap{
+  @include wrap;
+  height:1078px;
+}
+#content{
+  color:$color;
+  @include content;
+  height:1015px;
+  margin-top:63px;
+  .left{
+    width:525px;
+    height:530px;
+    margin-right: 110px;
+    p{
+      font-size: 16px;
+      line-height: 22px;
+      margin:30px 0;
+    }
+  }
+  .right{
+    height:965px;
+    width:575px;
+    border:1px solid #d5d6d7;
+    box-sizing: border-box;
+  }
+  .tableDiv{
+    width:475px;
+    margin:50px auto;
+    height:865px;
+    .title{
+      height:40px;
+      font-size: 26px;
+      border-bottom: 1px solid #37b2d8;
+    }
+    .des{
+      font-size: 15px;
+      margin:23px 0 49px;
+    }
+  }
+  form{
+    p{
+      font-size: 15px;
+      margin-left: 145px;
+      text-align: center;
+      line-height: 45px;
+      height:45px;
+      width:324px;
+      margin-bottom: 5px;
+      margin-top:20px;
+    }
+    p.err{
+      border:1px solid #ebebeb;
+      box-shadow: 0 0 10px #ccc;
+      border-radius: 5px;
+      background: url(#{$baseUrl}jg.png) no-repeat 45px center;
+    }
+    label{
+      width:125px;
+      text-align: right;
+      line-height: 45px;
+      display: inline-block;
+      margin-right: 20px;
+      font-size: 15px;
+    }
+    #sexBox{
+      input{
+        width:auto;
+        height:auto;
+      }
+      .sexLabel{
+        width:40px;
+        text-align: left;
+      }
+    }
+    input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { 
+      color:#dedede; 
+    } 
+    input::-moz-placeholder, textarea::-moz-placeholder { 
+      color:#dedede; 
+    }
+    input:-ms-input-placeholder , textarea:-ms-input-placeholder { 
+      color:#dedede; 
+    }
+    input{
+      font-family:Microsoft YaHei!important;
+      font-size: 16px;
+      height:32px;
+      margin:5px 0;
+      width:315px;
+      border:0;
+      color:#777;
+      border:1px solid #37b2d8;
+      padding-left:10px;
+      line-height: 1;
+    }
+    textarea{
+      font-family:Microsoft YaHei!important;
+    }
+    center{
+      width:327px;
+      position: relative;
+      top:9px;
+      display: inline-block;
+    }
+    .diy_select_txt{
+      @include singleEllipsis;
+      width:60px;
+      float: left;
+    }
+    .diy_select{
+      font-size: 16px;
+      height:32px;
+      border:1px solid #37b2d8;
+      width:93px;
+      line-height: 32px;
+      color:#777;
+      float: left;
+      position: relative;
+      text-align: left;
+      padding-left: 5px;
+
+    }
+
+    .diy_select:first-child{
+      margin-left:-1px;
+    }
+    .diy_select:nth-child(2){
+      margin: 0 14px;
+    }
+    .diy_select:first-child + .diy_select{
+      margin: 0 14px;
+    }
+    .diy_select_btn {
+      width: 23px;
+      height:33px;
+      float: right;
+      background: url(#{$baseUrl}selectDraw.png) no-repeat right 0;
+    }
+    .diy_select_list {
+      position: absolute;
+      border:1px solid #37b2d8;
+      top: 33px;
+      left: -1px;
+      z-index: 88888;
+      border-top: none;
+      width: 100%;
+      display: none;
+      _top: 29px;
+      background: #fff;
+      border-radius: 0;
+      li{
+        height:24px;
+        font-size: 12px;
+        line-height: 24px;
+        text-align: left;
+        padding-left: 5px;
+      }
+      li:hover{
+        background-color: #006db6;
+        color:#fff;
+      }
+    }
+
+    #Province{
+      margin-bottom:45px;
+    }
+    textarea{
+      height:205px;
+      font-size: 16px;
+      margin:5px 0;
+      width:315px;
+      border:0;
+      border:1px solid #37b2d8;
+      padding-left:10px;
+      margin-left:145px;
+    }
+    button{
+      margin-left:145px;
+      margin-top:40px;
+      width:117px;
+      height:38px;
+      color:#fff;
+      text-align: center;
+      border:0;
+      background-color: #40b4e5;
+      font-size: 18px;
+    }
+  }
+  #sendSucc{
+    display:none;
+    text-align:center;
+    img{
+      margin-top:120px;
+    }
+    p{
+      line-height:30px;
+      font-size:16px;
+      color:#888888;
+    }
+    .altSuc{
+      font-size:27px;
+      line-height:100px;
+      color:#333333;
+    }
+    a{
+      display:inline-block;
+      width:94px;
+      height:26px;
+      border:1px solid #40a9d2;
+      color:#888888;
+      margin-top:30px;
+    }
+  }
+}

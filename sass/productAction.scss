@@ -1,0 +1,270 @@
+@import "public";
+
+#banner-wrap{
+  @include wrap;
+  overflow: hidden;
+  background-color: #e6f3f9;
+  top:0;
+  z-index: 3;
+  height:80px;
+}
+#banner{
+  @include content;
+  overflow: hidden;
+  height:80px;
+  background-color: #e6f3f9;
+  ul{
+    margin-top:20px;
+    li{
+      float: left;
+      height:14px;
+      border-left:1px solid #c9cfd2;
+      width:92px;
+      font-size: 14px;
+      margin-bottom: 15px;
+      text-align: center;
+      line-height: 14px;
+      a{
+        color:#565a5b;
+      }
+    }
+    li:hover{
+      a{
+        text-decoration: underline;
+        color:#2278bb;
+      }
+    }
+  }
+}
+#content-wrap{
+  @include wrap;
+}
+#content{
+  @include content;
+  overflow: hidden;
+  position: relative;
+
+  margin-top:35px;
+  .left-space{
+    height:300px;
+  }
+  .right-space{
+
+  }
+}
+#function{
+  margin-left:60px;
+  margin-bottom:30px;
+  h3{
+    font-size: 30px;
+    line-height: 50px;
+    color:#8c8e92;
+    font-weight: normal;
+  }
+  .line{
+    width:55px;
+    height:2px;
+    background-color: #88b6f1;
+  }
+  .en{
+    font-size: 16px;
+    margin-top:11px;
+    color:#cccccc;
+  }
+  .intCont{
+    margin-top:35px;
+  }
+  .intCon{
+    height:46px;
+    line-height: 46px;
+    border-top:1px dashed #b2b3b6;
+    border-bottom:1px dashed #b2b3b6;
+    font-size: 21px;
+    color:#505050;
+    div{
+      float: left;
+    }
+    .intCon_img {
+      img{
+        position: relative;
+        top:6px;
+      }
+    }
+    .intCon_img_right{
+      margin-left:10px;
+    }
+  }
+  .intC{
+    margin-top:26px;
+    font-size: 14px;
+    line-height: 25px;
+    color:#747474;
+  }
+}
+#updata{
+  margin-left:150px;
+  display: none;
+  padding-bottom: 50px;
+  dl:first-child{
+    margin-top:30px;
+  }
+  dl{
+    position: relative;
+    border-left:1px solid #e1e1e1;
+    padding-bottom:10px;
+    dt{
+      height:28px;
+      font-size: 20px;
+      line-height: 20px;
+    }
+    .timeline_ver{
+      margin-left:195px;
+      margin-top: 5px;
+    }
+    .timeover{
+      display: inline-block;
+      width:190px;
+      text-align: center;
+      color:#006db6;
+    }
+    .ball{
+      width: 15px;
+      height:15px;
+      position: absolute;
+      top:0;
+      left:-8px;
+      background:url(#{$baseUrl}productUpgrade.png);
+      background-size: cover;
+    }
+    .ball.new{
+      background:url(#{$baseUrl}productUpgradeNow.png);
+    }
+    dd{
+      padding-left:190px;
+      font-size: 14px;
+      line-height: 22px;
+      color:#969696;
+      list-style-type:disc;
+    }
+  }
+}
+
+#download{
+  height:440px;
+  p{
+    height:60px;
+    line-height: 60px;
+    font-size: 18px;
+    margin-left: 60px;
+    color:#1d1d1d;
+  }
+  .item{
+    width:310px;
+    height:200px;
+    float: left;
+    margin:25px 95px;
+    .top{
+      line-height: 72px;
+      height:72px;
+      font-size: 18px;
+      border-bottom: 1px solid #dfdfdf;
+      img{
+        position: relative;
+        top:11px;
+        margin-left:34px;
+        margin-right:20px;
+      }
+      .name{
+        color:#7e8386;
+        margin-right:15px;
+      }
+      .edition{
+        font-size: 10px;
+        color:#67a1ff;
+      }
+    }
+    .bottom{
+      .left{
+        width:200px;
+        float: left;
+        margin-left:20px;
+        .resTime{
+          margin:35px 0 20px;
+        }
+      }
+      img{
+        margin-top:35px;
+      }
+      a{
+        display: block;
+        @include transition(0.5s);
+        float: left;
+        width:150px;
+        height:31px;
+        color:#0099ff;
+        text-align: center;
+        border-radius: 15px;
+        border:1px solid #0099ff;
+        line-height: 31px;
+        float: left;
+      }
+      a:hover{
+        background-color: #40b4e5;
+        color:#fff;
+        border-color:#40b4e5;
+      }
+    }
+  }
+}
+#floorLeft{
+  position: absolute;
+  top:250px;
+  z-index: 2;
+  height:280px;
+  border:1px solid #d7d7d7;
+  background-color: #fff;
+  ul{
+    li{
+      height:52px;
+      text-align: left;
+      padding-left: 80px;
+      line-height: 52px;
+      a{
+        color:#0077bb;
+      }
+    }
+    li.active{
+      a{
+        color:#fff;
+      }
+      background-color: #016db6;
+    }
+    li:hover{
+      cursor:pointer;
+    }
+  }
+  p{
+    text-align: left;
+    font-size: 14px;
+    color:#616d74;
+    width:160px;
+    margin-left: 35px;
+    span{
+      font-size: 18px;
+      color:#ea2b6c
+    }
+  }
+  div{
+    display: none;
+    overflow: hidden;
+    position: absolute;
+    top:-40px;
+    right:0;
+    text-align: center;
+    font-size: 14px;
+    width:100px;
+    .toTop{
+      color:#333;
+    }
+  }
+}

@@ -1,0 +1,179 @@
+@import "public";
+.requiredTip {
+    color: #fc5b3b !important
+}
+form{
+  label{
+    width:125px;
+    text-align: right;
+    line-height: 45px;
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 15px;
+  }
+  #sexBox{
+    input{
+      width:auto;
+      height:auto;
+    }
+    .sexLabel{
+      width:40px;
+      text-align: left;
+    }
+  }
+  input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color:#dedede;
+  }
+  input::-moz-placeholder, textarea::-moz-placeholder {
+    color:#dedede;
+  }
+  input:-ms-input-placeholder , textarea:-ms-input-placeholder {
+    color:#dedede;
+  }
+  input{
+    font-family:Microsoft YaHei!important;
+    font-size: 16px;
+    height:32px;
+    margin:5px 0;
+    width:315px;
+    border:0;
+    color:#777;
+    border:1px solid #37b2d8;
+    padding-left:10px;
+    line-height: 1;
+  }
+  select{
+    font-family:Microsoft YaHei!important;
+    font-size: 16px;
+    height:36px;
+    margin:5px 0;
+    width:325px;
+    border:0;
+    color:#777;
+    padding:5px;
+    border:1px solid #37b2d8;
+    padding-left:10px;
+    line-height: 1;
+    background: #fff;
+  }
+  textarea{
+    font-family:Microsoft YaHei!important;
+  }
+  center{
+    width:327px;
+    position: relative;
+    top:9px;
+    display: inline-block;
+  }
+  .diy_select_txt{
+    @include singleEllipsis;
+    width:60px;
+    float: left;
+  }
+  .diy_select{
+    font-size: 16px;
+    height:32px;
+    border:1px solid #37b2d8;
+    width:93px;
+    line-height: 32px;
+    color:#777;
+    float: left;
+    position: relative;
+    text-align: left;
+    padding-left: 5px;
+
+  }
+
+  .diy_select:first-child{
+    margin-left:-1px;
+  }
+  .diy_select:nth-child(2){
+    margin: 0 14px;
+  }
+  .diy_select:first-child + .diy_select{
+    margin: 0 14px;
+  }
+  .diy_select_btn {
+    width: 23px;
+    height:33px;
+    float: right;
+    background: url(#{$baseUrl}selectDraw.png) no-repeat right 0;
+  }
+  .diy_select_list {
+    position: absolute;
+    border:1px solid #37b2d8;
+    top: 33px;
+    left: -1px;
+    z-index: 88888;
+    border-top: none;
+    width: 100%;
+    display: none;
+    _top: 29px;
+    background: #fff;
+    border-radius: 0;
+    li{
+      height:24px;
+      font-size: 12px;
+      line-height: 24px;
+      text-align: left;
+      padding-left: 5px;
+    }
+    li:hover{
+      background-color: #006db6;
+      color:#fff;
+    }
+  }
+
+  #Province{
+    margin-bottom:45px;
+  }
+  textarea{
+    height:105px;
+    font-size: 16px;
+    margin:5px 0;
+    width:315px;
+    border:0;
+    border:1px solid #37b2d8;
+    padding-left:10px;
+  }
+  button{
+    margin-left:145px;
+    margin-top:40px;
+    width:117px;
+    height:38px;
+    color:#fff;
+    text-align: center;
+    border:0;
+    background-color: #40b4e5;
+    font-size: 18px;
+  }
+}
+#content .step{
+    width:800px;
+    margin:100px auto;
+    .title{
+        color:#37a;
+        font-size: 44px;
+        line-height: 60px;
+        font-weight: bolder;
+    }
+    .des{
+        color:#999;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .form-wrap{
+        padding:40px;
+    }
+    .form-group{
+        margin-bottom:15px;
+    }
+
+}
+#step4{
+  .customer_tel{
+    color:#37a;
+    font-size: 30px;
+    line-height: 40px;
+  }
+}

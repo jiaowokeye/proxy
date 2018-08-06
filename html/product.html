@@ -1,0 +1,825 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name=”renderer” content=”webkit” />
+    <meta name="keywords" content="移动协同办公，移动考勤，移动审批，移动CRM，定位轨迹，客户管理，销售管理，HCM，SaaS" />
+    <meta name="description" content="爱到位-位智天下股份有限公司，中国自主SaaS行业领先者，秉承让管理更到位的产品理念，全面管理企业日常工作，涵盖云通讯、云管理和云营销，致力于让客户便捷、高效、更好性价比地运营管理和服务。" />
+    <meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Expires" content="0">
+    <script src="./../js/lib/jquery-1.9.1.js"></script>
+    <title>产品</title>
+    <link rel="stylesheet" href="./../css/product.css?v=1.1">
+    <link rel="shortcut icon" type="image/x-icon" href="http://www.idaowei.com/idaowei.ico" media="screen" />
+    <script type="text/javascript" src="./../js/Constant.js"></script>
+    <script type="text/javascript" src="./../js/CommonResource.js"></script>
+    <script type="text/javascript" src="./../js/login.js"></script>
+</head>
+<body>
+<!--头部开始-->
+<div id="header-wrap">
+    <div id="Header" >
+        <a href="./../index.html"><img src="./../images/logo.png" alt="" class="logo"></a>
+        <span class="securities-wrap">【<span class="securities">证券代码</span>：872156】</span>
+        <div class="login-box floatR" id="formdiv">
+            <form id="loginForm" onkeydown="if(event.keyCode==13){Login.logon(true);}">
+                <div class="form-gruop floatL">
+                    <span>用户名：</span><input type="text" id="username" name="username" placeholder="请输入用户名">
+                </div>
+                <div class="form-gruop floatL">
+                    <span>密码：</span><input type="password" id="password" name="password" placeholder="请输入密码">
+                </div>
+                <div class="form-gruop floatL">
+                    <a id="loginBtn" href="javascript:Login.logon(true)"> 登录 <span >Login</span></a>
+                </div>
+            </form>
+        </div>
+        <div class="login-box floatR" style="display: none;" id="logindiv">
+            <div class="form-gruop floatL">
+                您好，您已登录位智天下后台管理系统
+            </div>
+            <div class="form-gruop floatL">
+                <a href="javascript:Login.logout();">注销</a>
+                <a href="javascript:Login.login(true);">进入</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--头部结束-->
+<!--导航开始-->
+<div id="nav-wrap">
+    <div id="nav">
+        <div class="tel floatL">
+            <div class="floatL">
+                <img src="./../images/phone.png" alt="">
+            </div>
+            <div class="floatR">
+                <p>400-055-5089</p>
+                <p>010-56629933</p>
+            </div>
+        </div>
+        <ul class="nav floatL" id="firstNav">
+            <li class="active">
+                <a href="./../html/product.html">产品</a>
+                <div class="childNav childNav-first">
+                    <div class="productAbout">
+                        <div class="productUpgrade">
+                            <div class="content">
+                                <p class="title">产品升级</p>
+                                <ul>
+                                <li class="new">
+                                    <a href="./productAction.html?active=1">
+                                        <span class="data">2018-04-13</span>
+                                        <span class="edition">
+                                            <img src="./../images/productUpgradeNow.png" alt="">
+                                        </span>i到位V9.0</a>
+                                </li>
+                                <li>
+                                    <a href="./productAction.html?active=1">
+                                        <span class="data">2018-03-09</span>
+                                        <span class="edition">
+                                            <img src="./../images/productUpgrade.png" alt="">i到位V8.9</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./productAction.html?active=1">
+                                        <span class="data">2017-12-27</span>
+                                        <span class="edition">
+                                            <img src="./../images/productUpgrade.png" alt="">i到位V8.8</span>
+                                    </a>
+                                </li>
+                                </ul>
+                                <a href="./../html/productAction.html?active=1" class="floatR moreUpgrade">更多升级></a>
+                            </div>
+                        </div>
+                        <div class="productDownLoad">
+                            <p class="title floatL">产品下载</p>
+                            <img class="floatR" src="./../images/toperwm.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="product">
+                        <a href="./../html/product.html#communication">
+                            <div class="groupItem">
+                                <p class="title">云通讯</p>
+                                <p class="content">为企业提供全面的互联网通讯服<br />务,轻松实现企业通讯能力</p>
+                                <p class="introductionTitle">服务优势</p>
+                                <p class="content">快、高、广、便利、安全、无忧</p>
+                                <p class="introductionTitle">应用场景</p>
+                                <p class="content">验证码、通知提醒、热线菜单可视化、<br />热线名片</p>
+                                <p class="introductionTitle">功能介绍</p>
+                                <p class="content">i信、企业短信、视频会议、一卡多号、企业名片、通话签名<p>
+                            </div>
+                        </a>
+
+                        <a href="./../html/product.html#administration ">
+                            <div class="groupItem">
+                                <p class="title">云管理</p>
+                                <p class="content">以云端大数据为依托,一体化解决企业<br/>整体管理效率问题。</p>
+                                <p class="introductionTitle">服务价值</p>
+                                <p class="content">互联网+、量身定制、解决滞后、真实<br/>透明、掌控全局、链接客户、时间掌控</p>
+                                <p class="introductionTitle">应用场景</p>
+                                <p class="content">跨区域销售管理、销售与专家协同管理<p>
+                            </div>
+                        </a>
+                        <a href="./../html/product.html#marketing">
+                            <div class="groupItem">
+                                <p class="title">云营销</p>
+                                <p class="content">为企业提供智能数字化营销服务平台,<br />全面提升企业品牌覆盖和营销效果</p>
+                                <p class="introductionTitle">服务优势</p>
+                                <p class="content">智能情报分析、营销诊断精准、<br/>用户覆盖广、投放精准、数据监测</p>
+                                <p class="introductionTitle">服务能力</p>
+                                <p class="content">建立企业信息布局、DECOS-Ad平台精准投放</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li><a href="./../html/customer.html">客户</a></li>
+            <li>
+                <a href="./../html/activity.html">观点</a>
+                <div class="childNav childNav-second">
+                    <ul>
+                        <li><a href="./../html/activity.html?active=0">位智观点</a></li>
+                        <li><a href="./../html/activity.html?active=1">新闻动态</a></li>
+                        <li><a href="./../html/activity.html?active=2">公司文化</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="./../html/about.html">关于我们</a>
+                <div class="childNav childNav-third">
+                    <ul>
+                        <li><a href="./../html/about.html#companyAbout">公司概述</a></li>
+                        <li><a href="./../html/about.html#qualifications">荣誉资质</a></li>
+                        <li><a href="./../html/about.html#cultural">文化氛围</a></li>
+                        <li><a href="./../html/about.html#joinUs">加入我们</a></li>
+                        <li><a href="./../html/about.html#contact">联系方式</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="./../html/about-contact.html">联系我们</a></li>
+        </ul>
+        <div class="nav-right floatR">
+            <ul>
+                <li><a href="./../html/about-contact.html"><span>订购咨询</span></a></li>
+                <li><a href="./../html/reg.html"><span>免费试用</span></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--导航结束-->
+
+<!--banner部分开始-->
+<div id="banner-wrap">
+    <img src="./../images/banner.png" alt="" class="bannerImg">
+    <div id="banner">
+        <p>i到位为企业构筑数字化运营生态</p>
+    </div>
+</div>
+<!--banner部分结束-->
+<!--content部分开始-->
+<div id="content-top-wrap">
+    <div class="content-top">
+        <div class="left floatL" >
+            <ul id="productList" data-option="16">
+                <li class="active item">
+                    <a  href="#communication-wrap">云通讯<img src="./../images/draw.png" alt=""></a>
+                    <div class="childDiv">
+                        <div class="triangle"></div>
+                        <ul>
+                            <li><a href="#communication-definition">定义</a></li>
+                            <li><a href="#communication-advantage">服务优势</a></li>
+                            <li><a href="#communication-scene">应用场景</a></li>
+                            <li><a href="#communication-introduction">功能介绍</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="item">
+                    <a href="#administration-wrap">云管理<img src="./../images/draw.png" alt=""></a>
+                    <div class="childDiv">
+                        <div class="triangle"> </div>
+                        <ul>
+                            <li><a href="#administration-definition">定义</a></li>
+                            <li><a href="#administration-introduction">服务价值</a></li>
+                            <li><a href="#administration-sceneL">应用场景</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="item">
+                    <a href="#marketing-wrap">云营销<img src="./../images/draw.png" alt=""></a>
+                    <div class="childDiv">
+                        <div class="triangle"></div>
+                        <ul>
+                            <li><a href="#marketing-definition">定义</a></li>
+                            <li><a href="#marketing-introduction">服务优势</a></li>
+                            <li><a href="#marketing-sceneL">服务能力</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="right floatR">
+            <a href="./productAction.html?active=0">产品功能</a>
+            <a href="./productAction.html?active=1">产品升级</a>
+            <a href="./productAction.html?active=2">产品下载</a>
+        </div>
+    </div>
+</div>
+<a name="communication-definition"></a>
+<div id="communication-wrap">
+    <div id="communication">
+        <div class="product-item communication">
+            <div class="floatL leftBox">
+
+                <div class="definition">
+                    <p class="product-name ">云通讯</p>
+                    <div>
+                        <p class="quotes"><img src="./../images/yh.png" alt="" ></p>
+                        <p class="describe">云通讯能够帮助企业实时链接客户、雇员、供应商及合作伙伴。通过i信、i 会议、行业短信等业务使企业具备更高效、更省钱、更优洞察力的新一代智能通讯平台。</p>
+                    </div>
+                    <a name="communication-advantage"></a>
+                </div>
+                <div>
+                    <div class="title">
+                        <p>
+                            <img src="./../images/titleLeft.png" alt="" class="leftImg">
+                            服务优势
+                            <img src="./../images/titleRight.png" alt="" class="rightImg">
+                        </p>
+                    </div>
+                    <div class="advantage">
+                        <div>短信到达率快，高峰时段也急速到达</div>
+                        <div>短信送达成功率高达99%以上，而传统短信仅有60%</div>
+                        <div>三网通全国覆盖</div>
+                        <div>终端无门槛，信息推送由系统自动生成</div>
+                        <div>金融交易级别的安全验证<br />阅后即焚，终端无残留</div>
+                        <div>集成资源精简，性能价格更优</div>
+                    </div>
+                </div>
+            </div>
+            <div class="imgShow floatR">
+                <a href="http://sms.idaowei.com" target="#"><img src="./../images/communication.png" alt=""></a>
+                
+            </div>
+            <a name="communication-scene"></a>
+            <div class="scene floatL">
+
+                <div class="title">
+                    <p>
+                        <img src="./../images/titleLeft.png" alt="" class="leftImg">
+                        应用场景
+                        <img src="./../images/titleRight.png" alt="" class="rightImg">
+                    </p>
+                </div>
+                <div class="sceneItemBox">
+                    <div class="sceneItem">
+                        <div class="btn03">
+                            <img src="./../images/p1.png" alt="">
+                            <div class="ovrly"></div>
+                            <div class="buttons">
+                                <p class="zzTitle">验证码</p>
+                                <p class="nr">适用于有自己的网站、APP、H5且需进行相关验证码验证的行业客户（如银行、证券等金融行业）及无短信端口的中小商户，需要用户进行注册验证、信息变更、支付确认、活动参与等场景时，均可通过i信通道进行验证码投递。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sceneItem">
+                        <div class="btn03">
+                            <img src="./../images/p2.png" alt="">
+                            <div class="ovrly"></div>
+                            <div class="buttons">
+                                <p class="zzTitle">通知提醒</p>
+                                <p class="nr">适用于进行相关验证码验证的行业客户（如银行、证券等金融行业）及无短信端口的中小商户进行 刷卡消费、积分变更、优惠券送达、退款入账、会员升级、发货通知、抢购
+                                    提醒等诸多场景。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sceneItem">
+                        <div class="btn03">
+                            <img src="./../images/p3.png" alt="">
+                            <div class="ovrly"></div>
+                            <div class="buttons">
+                                <p class="zzTitle">热线菜单可视化</p>
+                                <p class="nr">
+                                    适用于具备IVR语音热线的企业客户，例如银行、证券等金融行业，大型企业
+                                    售前/售后服务热线等。 用户拨打企业热线时，将冗长的IVR语音菜单用i信文本化显示，提高用户体验和效率。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sceneItem">
+                        <div class="btn03">
+                            <img src="./../images/p4.png" alt="">
+                            <div class="ovrly"></div>
+                            <div class="buttons">
+                                <p class="zzTitle">热线名片</p>
+                                <p class="nr">企业外呼<br />用户呼入</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="floatL introduction">
+                <a name="communication-introduction"></a>
+                <div class="title">
+                    <p>
+                        <img src="./../images/titleLeft.png" alt="" class="leftImg">
+                        功能介绍
+                        <img src="./../images/titleRight.png" alt="" class="rightImg">
+                    </p>
+                </div>
+                <div class="introductionClass">
+
+                    <div class="floatR right first">
+                        <div class="group">
+                            <div class="item">
+                                <div class="imgBox">
+                                    <img src="./../images/GNTEL_01.png" alt="">
+                                </div>
+                                <p>
+                                    <span class="title">i信</span>
+                                    <span>企业定制的模板信息通过接口方式推送至用户手机上，如：订单、验证码、银行卡刷卡提醒等关键信息。基于信令网发送信息，实时/安全，不易拦截，成功率高</span>
+                                </p>
+                            </div>
+                            <div class="item">
+                                <div class="imgBox">
+                                    <img src="./../images/GNTEL_02.png" alt="">
+                                </div>
+                                <p>
+                                    <span class="title">企业短信</span>
+                                    <span>企业的客户关怀、会员服务、注册/支付验证码下发，三网支持，三大运营商专属通道。</span>
+                                </p>
+                            </div>
+                            <div class="item">
+                                <div class="imgBox">
+                                    <img src="./../images/GNTEL_07.png" alt="">
+                                </div>
+                                <p>
+                                    <span class="title">
+                                        视频会议
+                                    </span>
+                                    <span>
+                                        电信运营商级通话质量、VOIP的价格，高清流畅的音视频，简
+单易用。 三网 通话支持，多方不限制
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="group">
+                            <div class="item">
+                                <div class="imgBox">
+                                    <img src="./../images/GNTEL_05.png" alt="">
+                                </div>
+                                <p>
+                                    <span class="title">一卡多号</span>
+                                    <span>提供企业副号，支持跨网用户</span>
+                                </p>
+                            </div>
+                            <div class="item">
+                                <div class="imgBox">
+                                    <img src="./../images/GNTEL_03.png" alt="">
+                                </div>
+                                <p>
+                                    <span class="title">企业名片</span>
+                                    <span>通过呼叫中心外呼或用户回拨时，系统把企业的定制信息实时屏显形式推送至用户手机上，以达到企业宣传或提示的目的。</span>
+                                </p>
+
+                            </div>
+                            <div class="item">
+                                <div class="imgBox">
+                                    <img src="./../images/GNTEL_04.png" alt="">
+                                </div>
+                                <p>
+                                    <span class="title">通话签名</span>
+                                    <span>企业员工之间或者与企业客户的呼叫时，弹屏显示企业定制信息</span>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<a name="administration-definition"></a>
+<div id="administration-wrap">
+   <div id="administration" class="product-item">
+       <div class=" administration">
+           <div class="floatR leftBox">
+               <div class="definition">
+
+                   <p class="product-name ">云管理</p>
+                   <div >
+                       <p class="quotes"><img src="./../images/yh.png" alt="" ></p>
+                       <p class="describe">轻量级企业云管理平台，专注于移动化企业运营的解决方案，以云端大数据为依托，一体化解决企业整体管理效率问题。帮助企业把“人”、“物”、“数”迅速管理到位。
+                           <br /><br />只需要<span class="red2">20%</span>的投入，解决企业<span class="red2">80%</span>的需求
+                       </p>
+                       <p class="adv"></p>
+                   </div>
+               </div>
+
+           </div>
+           <div class="imgShow floatL">
+               <img src="./../images/administration.png" alt="">
+           </div>
+       </div>
+       <div class="floatL introduction">
+           <a name="administration-introduction"></a>
+           <div class="title">
+               <p>
+                   <img src="./../images/titleLeft.png" alt="" class="leftImg">
+                   服务价值
+                   <img src="./../images/titleRight.png" alt="" class="rightImg">
+               </p>
+           </div>
+            <div>
+                <div class="group">
+                    <div class="item">
+                        <div class="imgBox">
+                            <span></span>
+                            <img src="./../images/GNYGL_01.png" alt="">
+                        </div>
+                        <p>
+                                    <span class="title">
+                                        互联网+
+                                    </span>
+                                    <span>
+                                        帮助企业融入客户生态圈，实现真正互联网+
+                                    </span>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <div class="imgBox">
+                            <span></span>
+                            <img src="./../images/GNYGL_02.png" alt="">
+                        </div>
+                        <p>
+                                    <span class="title">
+                                        解决滞后
+                                    </span>
+                                    <span>
+                                        所有信息手机生成、手机输入，实时形成统计，老板实时可见。掌握最新情况，占尽先机
+                                    </span>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <div class="imgBox">
+                            <span></span>
+                            <img src="./../images/GNYGL_03.png" alt="">
+                        </div>
+                        <p>
+                            <span class="title">掌控全局</span>
+                            <span>帮助企业知道：人在哪里，物在哪里，指令下到了哪里……帮您真正hold住全局</span>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <div class="imgBox">
+                            <span></span>
+                            <img src="./../images/GNYGL_04.png" alt="">
+                        </div>
+                        <p>
+                            <span class="title">时间管控</span>
+                            <span>重点任务实时督办，随时随地处理工作，把碎片时间用起来，手机在手，公司在手</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="group">
+                    <div class="item">
+                        <div class="imgBox">
+                            <span></span>
+                            <img src="./../images/GNYGL_05.png" alt="">
+                        </div>
+                        <p>
+                            <span class="title">量身定制</span>
+                                    <span>
+                                        组织结构可自定义，工作流程可自定制，不同员工根据职能可配不同功能
+                                    </span>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <div class="imgBox">
+                            <span></span>
+                            <img src="./../images/GNYGL_06.png" alt="">
+                        </div>
+                        <p>
+                            <span class="title">真实透明</span>
+                                    <span>
+                                       系统提供无可篡改的时间、地点等信息，借助拍照、录音等多种技术，提高各类信息的真实准确性
+                                    </span>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <div class="imgBox">
+                            <span></span>
+                            <img src="./../images/GNYGL_07.png" alt="">
+                        </div>
+                        <p>
+                            <span class="title">链接客户</span>
+                            <span>每次拜访过程记录；拜访进度清晰可见；公海功能让销售争取最适合的客户</span>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <div class="imgBox">
+                            <span></span>
+                            <img src="./../images/GNYGL_08.png" alt="">
+                        </div>
+                        <p>
+                            <span class="title">外勤管理</span>
+                            <span>员工足迹一目了然，不同设置灵活适应快销巡店等不同类型</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+       </div>
+       <div class="sceneL floatL">
+           <a name="administration-sceneL"></a>
+           <div class="title ">
+               <p>
+                   <img src="./../images/titleLeft.png" alt="" class="leftImg">
+                   应用场景
+                   <img src="./../images/titleRight.png" alt="" class="rightImg">
+               </p>
+           </div>
+           <div class="sceneItemBox">
+               <div class="sceneItem">
+                   <div class="btn03">
+                       <img src="./../images/p5.png" alt="">
+                       <div class="ovrly"></div>
+                       <div class="buttons">
+                           <p class="zzTitle">销售管理</p>
+                           <p class="nr">
+                            1、销售前线早知道、销售行为更到位；<br/>
+                            2、外勤工作简单化、精准定位更到位；<br/>
+                            3、销售过程更可控、全程可视更到位；<br/>
+                            4、客户资源跑不了、资源统筹更到位；<br/>
+                            5、数据报表随时瞧、数据安全更到位；<br/>
+                            6、任务计划很清晰、合理安排更到位；
+                            </p>
+                       </div>
+                   </div>
+               </div>
+               <div class="sceneItem">
+                   <div class="btn03">
+                       <img src="./../images/p6.png" alt="">
+                       <div class="ovrly"></div>
+                       <div class="buttons">
+                           <p class="zzTitle">协同管理</p>
+                           <p class="nr">
+                                1、移动协作效率高；简化流程更到位；<br/>
+                                2、手动审批就十秒；审批效率更到位；<br/>
+                                3、提升流程效率快；工作掌控更到位；<br/>
+                                4、管理过程效率高、精细管理更到位；<br/>
+                                5、业绩商机抓的住、盘活资源更到位；
+                               </p>
+                       </div>
+                   </div>
+                   <img src="./../images/p6.png" alt="">
+                   <div class="zz">
+                       <p class="zzTitle">销售与专家协同管理</p>
+                       <p class="nr"></p>
+                   </div>
+               </div>
+           </div>
+
+       </div>
+   </div>
+</div>
+<a name="marketing-definition"></a>
+<div id="marketing-wrap">
+    <div id="marketing" class="product-item">
+        <div class=" administration">
+            <div class="floatL leftBox">
+                <div class="definition">
+
+                    <p class="product-name ">云营销</p>
+                    <div >
+                        <p class="quotes"><img src="./../images/yh.png" alt="" ></p>
+                        <p class="describe"> i到位的数字化营销一体化平台“云营销”，帮助企业的营销行为从长周期的项目型转化为基于数字的追求持续匀增长的运营型，从而引领企业进入真正的“互联网+”数字化运营时代。
+                           <br /><br/> i到位云营销改变现有的等待客户访问的模式，变为通过大数据分析用户行为，预测客户行为，精准推送企业产品和服务到客户身边。结合电信运营商的大数据，和DECOS-BehaviorAI（行为AI）完成客户行为到动机的预测，同时匹配最佳性价比渠道和高质量的DECOSWriterAI(写作AI）传播内容的制作，完成数字化精准营销。
+                           <a target="_blank" href="http://www.zdaowei.com">
+                            <img src="./../images/marketBtn.png" alt="">&nbsp;&nbsp;<span>|</span>&nbsp;&nbsp;点击进入云营销平台&nbsp;>
+                           </a>
+                        </p>
+                        <p class="adv"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="imgShow floatR">
+                <img src="./../images/marketing.png" alt="">
+            </div>
+        </div>
+        <div class="floatL introduction">
+            <a name="marketing-introduction"></a>
+            <div class="title">
+                <p>
+                    <img src="./../images/titleLeft.png" alt="" class="leftImg">
+                    服务优势
+                    <img src="./../images/titleRight.png" alt="" class="rightImg">
+                </p>
+            </div>
+            <div>
+                <div class="group">
+                    <div class="item">
+                        <div class="imgBox">
+                            <span></span>
+                            <img src="./../images/GNYYX_01.png" alt="">
+                        </div>
+                        <p>
+                             <span class="title">
+                                   用户覆盖广
+                             </span>
+                             <span>
+                                   多种资源类型，覆盖海量用户
+                             </span>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <div class="imgBox">
+                            <span></span>
+                            <img src="./../images/GNYYX_02.png" alt="">
+                        </div>
+                        <p>
+                             <span class="title">
+                                 投放精准
+                             </span>
+                             <span>
+                                 大数据分析，实现网络精准投放
+                             </span>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <div class="imgBox">
+                            <span></span>
+                            <img src="./../images/GNYYX_03.png" alt="">
+                        </div>
+                        <p>
+                            <span class="title">数据监测</span>
+                            <span>实时监控，精准分析投放效果</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="group">
+                    <div class="item">
+                        <div class="imgBox">
+                            <span></span>
+                            <img src="./../images/GNYYX_04.png" alt="">
+                        </div>
+                        <p>
+                            <span class="title">智能情报分析</span>
+                                    <span>
+                                        借助 智能机器人基于大数据云计算等技术为企业策划最佳性价比营销方案
+                                    </span>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <div class="imgBox">
+                            <span></span>
+                            <img src="./../images/GNYYX_05.png" alt="">
+                        </div>
+                        <p>
+                            <span class="title">高效可靠</span>
+                            <span>PR级数据储存体系，分布式云计算架构，更可靠的技术保障</span>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <div class="imgBox">
+                            <span></span>
+                            <img src="./../images/GNYYX_06.png" alt="">
+                        </div>
+                        <p>
+                            <span class="title">营销诊断精准</span>
+                            <span>从产品完整性，产品定位，慕白客户，营销渠道，预算评估几个维度进行分析，由机器人自动对方案进行整体优化，并提供分析报告</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sceneL floatL">
+            <div class="title ">
+                <a name="marketing-sceneL"></a>
+                <p>
+                    <img src="./../images/titleLeft.png" alt="" class="leftImg">
+                    服务能力
+                    <img src="./../images/titleRight.png" alt="" class="rightImg">
+                </p>
+            </div>
+            <div class="sceneItemBox">
+                <div class="group group1">
+                    <div class="class">
+                        <p>建立企业信息布局</p>
+                        <div class="line"></div>
+                    </div>
+                    <div class="sceneItem first">
+                        <div class="btn03">
+                            <img src="./../images/p7.jpg" alt="">
+                            <div class="ovrly"></div>
+                            <div class="buttons">
+                                <p class="zzTitle">新闻体系</p>
+                                <p class="nr">通过搜索引擎搜索，多角度了解媒体观点，企业口碑，前景和未来，故事情怀等作为判断和决策参考为企业进行信息布局，树立品牌影响力和推动行业竞争优势。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sceneItem">
+                        <div class="btn03">
+                            <img src="./../images/p8.jpg" alt="">
+                            <div class="ovrly"></div>
+                            <div class="buttons">
+                                <p class="zzTitle">互动体系</p>
+                                <p class="nr">互动消费者对现有产品的意见和建议，使企业更好地洞察市场的潜在需求，保证市场信息的及时性。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="class">
+                        <p></p>
+                    </div>
+                    <div class="sceneItem first">
+                        <div class="btn03">
+                            <img src="./../images/p9.jpg" alt="">
+                            <div class="ovrly"></div>
+                            <div class="buttons">
+                                <p class="zzTitle">口碑体系</p>
+                                <p class="nr">通过海量社交媒体，包括微信公号，微博，直播平台和KOL意见领袖等渠道进行口碑传播，满足消费者需求、实现交易转化，赢得满意和忠诚度，提高企业和品牌形象为最终目的。具有成本小，产出大，效率高，风险低等特点。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sceneItem">
+                        <div class="btn03">
+                            <img src="./../images/p10.jpg" alt="">
+                            <div class="ovrly"></div>
+                            <div class="buttons">
+                                <p class="zzTitle">自媒体体系</p>
+                                <p class="nr">24小时对热点、热搜娱乐与时事新闻类内容的高关注度，在品牌营销中实现与用户的情感共鸣，帮助企业品牌形成定制化的沟通方式。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="group">
+                    <div class="class">
+                        <p>DECOS-Ad平台精准投放</p>
+                        <div class="line"></div>
+                    </div>
+                    <div class="sceneItem first">
+                        <div class="btn03">
+                            <img src="./../images/p11.jpg" alt="">
+                            <div class="ovrly"></div>
+                            <div class="buttons">
+                                <p class="zzTitle"><img src="./../images/6.png" alt=""></p>
+                                <p class="nr"> DECOS-Ad是解决海量媒体的精准自动投放平台。集合市场推广所需的各种媒体和渠道的智能化数字营销平台，平台包含近3000+新闻媒体、4000+微信媒体、10000+微博媒体、CPA/CPS/DSP等推广渠道。通过平台系统化服务进行数据分析，对于每一次推广都产生相应的数据报告，真正做到数据推推动，效果导向。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--content结束-->
+<!--footer部分开始-->
+<div id="footer-wrap">
+    <div id="footer" >
+        <div class="footer-left  floatL">
+            <div >
+                <ul class="function">
+                    <li><a href="./productAction.html#clockinM">考勤</a></li>
+                    <li><a href="./productAction.html#shenpi">审批</a></li>
+                    <li><a href="./productAction.html#kehuguanli">客户</a></li>
+                    <li><a href="./productAction.html#kehubaifang">拜访</a></li>
+                    <li><a href="./productAction.html#sales">销售</a></li>
+                    <li><a href="./productAction.html#dingdanguanli">订单</a></li>
+                    <li><a href="./productAction.html#contacts">人脉</a></li>
+                    <li><a href="./productAction.html#dingwei">送货追踪</a></li>
+                </ul>
+                <ul class="share">
+                    <li><a target="_blank" href="http://weibo.com/idaowei?refer_flag=1001030102_"><img class="imgFirst" src="./../images/shareSina.png" alt=""><img class="imgSecond" src="./../images/shareSinaH.png" alt=""></a></li>
+                    <li class="shareWx">
+                        <a target="_blank" href="javascript:;"><img class="imgFirst" src="./../images/sharewx.png" alt=""><img class="imgSecond" src="./../images/sharewxH.png" alt=""></a>
+                        <div><img src="./../images/code.jpg" alt=""></div>
+                    </li>
+
+                </ul>
+            </div>
+            <div >
+                <p class="record">Copyright 2010-2017 idaowei.com All Rights Reserved 京ICP备11019734号-2 京公网安备11010802013421号</p>
+            </div>
+        </div>
+        <div class="footer-right floatR">
+            <img src="./../images/footer-wx.png" alt="">
+        </div>
+    </div>
+</div>
+
+<!--footer部分结束-->
+
+<div id="aside">
+    <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2929809574&site=qq&menu=yes">
+        <img src="./../images/customerServide.png" alt="">在线咨询
+    </a>
+</div>
+<script src="./../js/product.js"></script>
+</body>
+</html>
